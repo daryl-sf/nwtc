@@ -13,8 +13,8 @@ export default function Home() {
             <p className="mt-4">
               North West Triathlon Club (NWTC) is based in Derry in Northern
               Ireland. The club was formed in 1983 at Templemore Sports Complex
-              in the city and hosts one of Ireland's longest running triathlon
-              events, the Liam Ball Sprint triathlon.
+              in the city and hosts one of Ireland&apos;s longest running
+              triathlon events, the Liam Ball Sprint triathlon.
             </p>
           </section>
         </main>
