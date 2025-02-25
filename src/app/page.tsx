@@ -5,15 +5,20 @@ import { BrandLink } from "@/app/ui/link";
 export default function Home() {
   return (
     <>
-      <div className="min-h-screen flex flex-col bg-gray-50 text-brandBlue">
+      <div className="min-h-screen flex flex-col text-gray-800">
         {/* <HeroSection /> */}
         <main className="flex-1 container mx-auto px-4 py-8">
-          <h1 className="text-3xl font-bold">Main Content</h1>
-          <p className="mt-4 text-gray-700">
-            This is the main content section.
-          </p>
+          <section className="bg-foreground p-4 rounded-lg">
+            <h1 className="text-3xl font-bold">About Us</h1>
+            <p className="mt-4">
+              North West Triathlon Club (NWTC) is based in Derry in Northern
+              Ireland. The club was formed in 1983 at Templemore Sports Complex
+              in the city and hosts one of Ireland's longest running triathlon
+              events, the Liam Ball Sprint triathlon.
+            </p>
+          </section>
         </main>
-        <footer className="bg-gray-100 p-4 text-center">
+        <footer className="text-white p-4 text-center border-t border-brandGreen">
           <ul className="flex justify-between sm:justify-center flex-wrap gap-4">
             <li>
               <BrandLink
