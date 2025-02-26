@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { geistMono, geistSans } from "@/app/ui/fonts";
-import Navbar from "@/app/ui/nav/nav-bar";
+// import Navbar from "@/app/ui/nav/nav-bar";
 
 export const metadata: Metadata = {
   title: "Northwest Triathlon Club",
@@ -17,9 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background scroll-smooth`}
       >
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
       </body>
     </html>
