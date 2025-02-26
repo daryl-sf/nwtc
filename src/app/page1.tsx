@@ -1,7 +1,7 @@
 import Image from "next/image";
 // import HeroSection from "@/app/ui/hero-section";
 import { BrandLink } from "@/app/ui/link";
-import Section from "@/app/ui/nav/section";
+// import Section from "@/app/ui/nav/section";
 
 export default function Home() {
   return (
