@@ -3,7 +3,7 @@ import { geistMono } from "./ui/fonts";
 
 export default function Page() {
   return (
-    <div className="snap-y snap-mandatory overflow-y-scroll h-screen ">
+    <div className="snap-y snap-mandatory overflow-y-scroll h-screen no-scrollbar">
       <div className="snap-always snap-center">
         <div className="relative min-h-screen flex bg-brandBlue">
           <div className="container max-w-screen-xl mx-auto flex flex-col gap-16 justify-center items-center text-2xl ">

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { geistMono, geistSans } from "@/app/ui/fonts";
-import Navbar from "@/app/ui/nav/nav-bar";
+// import Navbar from "@/app/ui/nav/nav-bar";
 
 export const metadata: Metadata = {
   title: "Northwest Triathlon Club",
