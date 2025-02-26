@@ -28,7 +28,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-background sticky top-0 z-50 shadow-md sm:relative border-b-4 border-brandGreen">
+    <nav className="bg-background sticky top-0 z-50 shadow-md border-b-4 border-brandGreen">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex py-2 items-center justify-between">
           {/* Mobile menu button */}
