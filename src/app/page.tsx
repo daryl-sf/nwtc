@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { geistMono } from "./ui/fonts";
+import { geistMono } from "@/app/ui/fonts";
+import Card from "@/app/ui/card";
 
 export default function Page() {
   return (
@@ -58,78 +59,19 @@ export default function Page() {
       <div className="snap-always snap-center">
         <div className="relative min-h-screen flex bg-brandGreen">
           <div className="container max-w-screen-xl mx-auto flex flex-col justify-center items-center text-4xl ">
-            <div className="snap-y snap-mandatory flex flex-col gap-8 overflow-y-scroll no-scrollbar justify-between w-full mx-auto my-6 px-6 max-h-screen">
+            <div className="snap-y snap-mandatory grid grid-cols-1 sm:grid-cols-2 place-items-center gap-6 overflow-y-scroll no-scrollbar justify-between w-full mx-auto my-6 px-6 max-h-screen">
               <div className="snap-center snap-always">
-                <div className="h-[80vh] w-[90vw] rounded bg-brandBlue text-white flex flex-col justify-around items-center">
-                  <Image
-                    src="/nwtc-logo.PNG"
-                    alt="NWTC Logo"
-                    width={536}
-                    height={536}
-                    className="border-white border rounded-full hover:border-brandGreen h-56 w-56"
-                  />
-                  <div className="mx-4">
-                    <h1>🏊🏼‍♂️ Swimming</h1>
-                    <p>🗓️ Tuesday 8:30pm</p>
-                    <p>📍 Foyle Arena</p>
-                    <p>
-                      Coached session lasting 1 hour.
-                      <br />
-                      <br />
-                      All abilities welcome.
-                    </p>
-                  </div>
-                </div>
+                <Card />
               </div>
               <div className="snap-center snap-always">
-                <div className="h-[80vh] w-[90vw] rounded bg-brandBlue text-white flex flex-col justify-around items-center">
-                  <Image
-                    src="/nwtc-logo.PNG"
-                    alt="NWTC Logo"
-                    width={536}
-                    height={536}
-                    className="border-white border rounded-full hover:border-brandGreen h-56 w-56"
-                  />
-                  <div className="mx-4">
-                    <h1>🏊🏻‍♀️ Swimming</h1>
-                    <p>🗓️ Thursday 6pm</p>
-                    <p>📍 Templemore Sports Complex</p>
-                    <p>
-                      Coached session lasting 1 hour.
-                      <br />
-                      <br />
-                      All abilities welcome.
-                    </p>
-                  </div>
-                </div>
+                <Card />
               </div>
               <div className="snap-center snap-always">
-                <div className="h-[80vh] w-[90vw] rounded bg-brandBlue text-white flex flex-col justify-around items-center">
-                  <Image
-                    src="/nwtc-logo.PNG"
-                    alt="NWTC Logo"
-                    width={536}
-                    height={536}
-                    className="border-white border rounded-full hover:border-brandGreen h-56 w-56"
-                  />
-                  <div className="mx-4">
-                    <h1>🏃🏼‍♂️ Running</h1>
-                    <p>🗓️ Wednesday 6:15pm</p>
-                    <p>📍 Templemore Sports Complex</p>
-                    <p>
-                      Coached session lasting 1 hour.
-                      <br />
-                      <br />
-                      All abilities welcome.
-                    </p>
-                  </div>
-                </div>
+                <Card />
               </div>
-              {/* <div className="snap-center snap-always">
-                <div className="h-[80vh] w-[90vw] rounded bg-lime-500">
-                  Session 4
-                </div>
-              </div> */}
+              <div className="snap-center snap-always">
+                <Card />
+              </div>
             </div>
           </div>
         </div>
