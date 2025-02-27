@@ -108,7 +108,7 @@ export default function Page() {
               />
               <h1 className="text-center text-wrap text-4xl">Join Us</h1>
               <p className="text-center text-white">
-                Some copy and CTA to join the club
+                Some copy and CTA to join the club.
               </p>
             </div>
           </div>
