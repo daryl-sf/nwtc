@@ -3,6 +3,7 @@ import "./globals.css";
 import { geistMono, geistSans } from "@/app/ui/fonts";
 import { BrandLink } from "@/app/ui/link";
 import Image from "next/image";
+import FloatingMenu from "./ui/nav/floating";
 
 export const metadata: Metadata = {
   title: "Northwest Triathlon Club",
@@ -21,7 +22,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background scroll-smooth`}
       >
         {children}
-        <footer className="text-white p-4 text-center border-t border-brandGreen">
+        <footer className="text-white p-4 text-center border-t border-brandGreen bg-brandBlue">
           <ul className="flex justify-between sm:justify-center flex-wrap gap-4">
             <li>
               <BrandLink
@@ -74,6 +75,7 @@ export default function RootLayout({
           </ul>
           <p className="text-xs mt-1">© 2025 - Northwest Triathlon Club</p>
         </footer>
+        <FloatingMenu />
       </body>
     </html>
   );
