@@ -3,7 +3,7 @@ export default function Juniors() {
     <div className="snap-always snap-center" id="juniors">
       <div className="relative min-h-screen flex bg-brandBlue">
         <div className="container max-w-screen-xl mx-auto flex justify-center items-center text-2xl ">
-          <div className="p-4 bg-white rounded-lg text-brandBlue flex flex-col gap-3 text-base mx-4 max-h-[70vh] overflow-scroll">
+          <div className="p-4 bg-white rounded-lg text-brandBlue flex flex-col gap-3 text-base mx-4 max-h-[70vh] overflow-scroll no-scrollbar">
             <h1 className="text-2xl font-extrabold text-brandBlue">Juniors</h1>
             <p>
               At NWTC, we are passionate about developing young athletes in a
