@@ -19,7 +19,7 @@ export default function Card({
   };
 }) {
   return (
-    <div className="w-96 rounded bg-brandBlue text-white">
+    <div className="rounded bg-brandBlue text-white pb-4">
       <Image
         src={image.src}
         alt={image.alt}
