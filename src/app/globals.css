@@ -32,8 +32,4 @@ body {
   .no-scrollbar::-webkit-scrollbar {
     display: none;  /* Safari and Chrome */
   }
-
-  .min-h-with-footer {
-    min-height: calc(100vh - 77px);
-  }
 }

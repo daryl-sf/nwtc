@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function Races() {
   return (
-    <div className="snap-always snap-center pb-20" id="races">
-      <div className="relative min-h-with-footer flex bg-brandBlue pb-20">
+    <div className="snap-always snap-start" id="races">
+      <div className="relative min-h-screen max-h-screen flex bg-brandBlue pb-20">
         <div className="container max-w-screen-xl mx-auto text-2xl pt-4">
           <Carousel
             className="rounded-xl"
@@ -28,9 +28,9 @@ export default function Races() {
           >
             <div className="relative h-full w-full">
               <Image
-                width={5071}
-                height={3379}
-                src={"/juniors/bikes-transition.jpg"}
+                width={1500}
+                height={999}
+                src={"/races/bike-transition.jpg"}
                 alt="Bikes in transition area"
                 className="h-full w-full object-cover"
               />
@@ -52,9 +52,9 @@ export default function Races() {
             </div>
             <div className="relative h-full w-full">
               <Image
-                width={5071}
-                height={3379}
-                src={"/juniors/bikes-transition.jpg"}
+                width={2000}
+                height={1333}
+                src={"/races/cyclists-racing.jpg"}
                 alt="Bikes in transition area"
                 className="h-full w-full object-cover"
               />

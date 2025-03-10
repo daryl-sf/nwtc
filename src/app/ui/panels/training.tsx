@@ -10,8 +10,8 @@ import { BrandLink } from "@/app/ui/link";
 
 export default function Training() {
   return (
-    <div className="snap-always snap-center pb-20" id="training">
-      <div className="relative min-h-with-footer flex bg-brandBlue pb-20">
+    <div className="snap-always snap-center" id="training">
+      <div className="relative min-h-screen max-h-screen flex bg-brandBlue pb-20">
         <div className="container max-w-screen-xl mx-auto text-2xl pt-4">
           <Carousel
             className="rounded-xl"
@@ -34,8 +34,8 @@ export default function Training() {
           >
             <div className="relative h-full w-full">
               <Image
-                width={6000}
-                height={4000}
+                width={1500}
+                height={800}
                 src={"/training/pool-swimming.jpg"}
                 alt="Athlete swimming in pool"
                 className="h-full w-full object-cover"
@@ -78,8 +78,8 @@ export default function Training() {
               <Image
                 src="/training/running.jpg"
                 alt="Athlete running on road"
-                width={4489}
-                height={2988}
+                width={1200}
+                height={799}
                 className="h-full w-full object-cover"
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
@@ -111,8 +111,8 @@ export default function Training() {
               <Image
                 src="/training/open-water-swimming.jpg"
                 alt="Athlete swimming in open water"
-                width={6637}
-                height={3348}
+                width={1200}
+                height={605}
                 className="h-full w-full object-cover"
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
@@ -143,8 +143,8 @@ export default function Training() {
               <Image
                 src="/training/cycling.jpg"
                 alt="Two female athletes cycling on road"
-                width={6000}
-                height={4000}
+                width={1200}
+                height={800}
                 className="h-full w-full object-cover"
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
@@ -175,7 +175,7 @@ export default function Training() {
                     >
                       <Image
                         aria-hidden
-                        src="/Facebook_Logo_Primary.png"
+                        src="/social-media/Facebook_Logo_Primary.png"
                         alt="Facebook"
                         width={2084}
                         height={2084}
@@ -189,7 +189,7 @@ export default function Training() {
                     >
                       <Image
                         aria-hidden
-                        src="/Instagram_Glyph_Gradient.png"
+                        src="/social-media/Instagram_Glyph_Gradient.png"
                         alt="Instagram"
                         width={500}
                         height={500}

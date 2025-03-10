@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "@/app/globals.css";
 import { geistMono, geistSans } from "@/app/ui/fonts";
-import { BrandLink } from "@/app/ui/link";
-import Image from "next/image";
-import FloatingMenu from "@/app/ui/nav/floating";
+// import { BrandLink } from "@/app/ui/link";
+// import Image from "next/image";
+// import FloatingMenu from "@/app/ui/nav/floating";
 
 export const metadata: Metadata = {
   title: "Northwest Triathlon Club",
@@ -22,7 +22,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background scroll-smooth`}
       >
         {children}
-        <footer className="text-white p-4 text-center border-t border-brandGreen bg-brandBlue sticky bottom-0 hidden md:block">
+        {/* <footer className="text-white p-4 text-center border-t border-brandGreen bg-brandBlue sticsky bottom-0 hidden md:block">
           <ul className="flex justify-between sm:justify-center flex-wrap gap-4">
             <li>
               <BrandLink
@@ -31,7 +31,7 @@ export default function RootLayout({
               >
                 <Image
                   aria-hidden
-                  src="/Facebook_Logo_Primary.png"
+                  src="/social-media/Facebook_Logo_Primary.png"
                   alt="Facebook"
                   width={2084}
                   height={2084}
@@ -47,7 +47,7 @@ export default function RootLayout({
               >
                 <Image
                   aria-hidden
-                  src="/Instagram_Glyph_Gradient.png"
+                  src="/social-media/Instagram_Glyph_Gradient.png"
                   alt="Instagram"
                   width={500}
                   height={500}
@@ -63,7 +63,7 @@ export default function RootLayout({
               >
                 <Image
                   aria-hidden
-                  src="/Digital_Glyph_Green.png"
+                  src="/social-media/Digital_Glyph_Green.png"
                   alt="WhatsApp"
                   width={360}
                   height={362}
@@ -71,11 +71,11 @@ export default function RootLayout({
                 />
                 WhatsApp
               </BrandLink>
-            </li> */}
+            </li>
           </ul>
           <p className="text-xs mt-1">© 2025 - Northwest Triathlon Club</p>
-        </footer>
-        <FloatingMenu />
+        </footer> */}
+        {/* <FloatingMenu /> */}
       </body>
     </html>
   );

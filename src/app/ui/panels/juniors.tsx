@@ -6,8 +6,8 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 export default function Juniors() {
   return (
-    <div className="snap-always snap-center pb-20" id="juniors">
-      <div className="relative min-h-with-footer flex bg-brandBlue pb-20">
+    <div className="snap-always snap-start" id="juniors">
+      <div className="relative min-h-screen max-h-screen flex bg-brandBlue pb-8">
         <div className="container max-w-screen-xl mx-auto text-2xl pt-4">
           <Carousel
             className="rounded-xl"
@@ -30,9 +30,9 @@ export default function Juniors() {
           >
             <div className="relative h-full w-full">
               <Image
-                width={5071}
-                height={3379}
-                src={"/juniors/bikes-transition.jpg"}
+                width={2000}
+                height={1333}
+                src={"/juniors/single-swimmer.jpg"}
                 alt="Bikes in transition area"
                 className="h-full w-full object-cover"
               />
@@ -53,8 +53,8 @@ export default function Juniors() {
             </div>
             <div className="relative h-full w-full">
               <Image
-                width={4000}
-                height={3000}
+                width={1500}
+                height={1125}
                 src={"/juniors/cyclists.jpg"}
                 alt="Traithletes racing on bikes"
                 className="h-full w-full object-cover"
@@ -75,8 +75,8 @@ export default function Juniors() {
             </div>
             <div className="relative h-full w-full">
               <Image
-                width={6240}
-                height={4160}
+                width={1660}
+                height={1106}
                 src={"/juniors/swim-line-up.jpg"}
                 alt="Traithletes lining up to swim"
                 className="h-full w-full object-cover"
@@ -99,8 +99,8 @@ export default function Juniors() {
             </div>
             <div className="relative h-full w-full">
               <Image
-                width={4284}
-                height={3078}
+                width={2000}
+                height={1436}
                 src={"/juniors/runners.jpg"}
                 alt="Traithletes running"
                 className="h-full w-full object-cover"
@@ -123,8 +123,8 @@ export default function Juniors() {
             </div>
             <div className="relative h-full w-full">
               <Image
-                width={3500}
-                height={2333}
+                width={2000}
+                height={1333}
                 src={"/juniors/bike-on-ground.jpg"}
                 alt="Bike on the ground at side of road"
                 className="h-full w-full object-cover"
@@ -146,8 +146,8 @@ export default function Juniors() {
             </div>
             <div className="relative h-full w-full">
               <Image
-                width={3500}
-                height={1964}
+                width={2000}
+                height={1122}
                 src={"/juniors/cyclist.jpg"}
                 alt="Single cyclist on road"
                 className="h-full w-full object-cover"
@@ -170,7 +170,7 @@ export default function Juniors() {
                     >
                       <Image
                         aria-hidden
-                        src="/Facebook_Logo_Primary.png"
+                        src="/social-media/Facebook_Logo_Primary.png"
                         alt="Facebook"
                         width={2084}
                         height={2084}
@@ -184,7 +184,7 @@ export default function Juniors() {
                     >
                       <Image
                         aria-hidden
-                        src="/Instagram_Glyph_Gradient.png"
+                        src="/social-media/Instagram_Glyph_Gradient.png"
                         alt="Instagram"
                         width={500}
                         height={500}

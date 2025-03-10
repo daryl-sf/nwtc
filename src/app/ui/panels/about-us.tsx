@@ -4,8 +4,8 @@ import { Carousel } from "@material-tailwind/react";
 
 export default function AboutUs() {
   return (
-    <div className="snap-always snap-center pb-20" id="about-us">
-      <div className="relative min-h-with-footer flex bg-brandBlue pb-20">
+    <div className="snap-always snap-start" id="about-us">
+      <div className="relative min-h-screen max-h-screen flex bg-brandBlue pb-20">
         <div className="container max-w-screen-xl mx-auto text-2xl pt-4">
           <Carousel
             className="rounded-xl"
@@ -28,9 +28,9 @@ export default function AboutUs() {
           >
             <div className="relative h-full w-full">
               <Image
-                width={5071}
-                height={3379}
-                src={"/juniors/bikes-transition.jpg"}
+                width={3024}
+                height={2324}
+                src={"/about-us/irish-runner.jpg"}
                 alt="Bikes in transition area"
                 className="h-full w-full object-cover"
               />
@@ -39,22 +39,25 @@ export default function AboutUs() {
                   <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl rounded-xl border-b-2 border-white pb-3">
                     Our origins
                   </h1>
-                  <p className="border-t-2 border-brandGreen pt-3 rounded-xl">
+                  <p className="border-t-2 border-brandGreen py-3 rounded-xl">
                     Founded in 1983, North West Triathlon Club (NWTC) is one of
                     Ireland&apos;s longest-standing triathlon communities, based
-                    in Derry, Northern Ireland. As a Triathlon
-                    Ireland-affiliated club, we welcome athletes of all levels
-                    from across the Northwest region, offering a supportive and
-                    inclusive environment to train, compete, and grow.
+                    in Derry, Northern Ireland.
+                  </p>
+                  <p>
+                    As a Triathlon Ireland-affiliated club, we welcome athletes
+                    of all levels from across the Northwest region, offering a
+                    supportive and inclusive environment to train, compete, and
+                    grow.
                   </p>
                 </div>
               </div>
             </div>
             <div className="relative h-full w-full">
               <Image
-                width={5071}
-                height={3379}
-                src={"/juniors/bikes-transition.jpg"}
+                width={2000}
+                height={1335}
+                src={"/about-us/swimmers.jpg"}
                 alt="Bikes in transition area"
                 className="h-full w-full object-cover"
               />
@@ -63,13 +66,16 @@ export default function AboutUs() {
                   <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl rounded-xl border-b-2 border-white pb-3">
                     What we offer
                   </h1>
-                  <p className="border-t-2 border-brandGreen pt-3 rounded-xl">
+                  <p className="border-t-2 border-brandGreen py-3 rounded-xl">
                     From complete beginners to seasoned triathletes, our members
                     benefit from expert coaching, structured training sessions,
-                    and a vibrant social community. We also run a dedicated
-                    junior program to inspire the next generation of
-                    triathletes. Whether your goal is fitness, fun, or
-                    high-level competition, NWTC is here to help you achieve it.
+                    and a vibrant social community.
+                  </p>
+                  <p>
+                    We also run a dedicated junior program to inspire the next
+                    generation of triathletes. Whether your goal is fitness,
+                    fun, or high-level competition, NWTC is here to help you
+                    achieve it.
                   </p>
                 </div>
               </div>
@@ -78,7 +84,7 @@ export default function AboutUs() {
               <Image
                 width={5071}
                 height={3379}
-                src={"/juniors/bikes-transition.jpg"}
+                src={"/about-us/running-legs.jpg"}
                 alt="Bikes in transition area"
                 className="h-full w-full object-cover"
               />
@@ -87,21 +93,23 @@ export default function AboutUs() {
                   <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl rounded-xl border-b-2 border-white pb-3">
                     By the community, for the community
                   </h1>
-                  <p className="border-t-2 border-brandGreen pt-3 rounded-xl">
+                  <p className="border-t-2 border-brandGreen py-3 rounded-xl">
                     NWTC is a volunteer-run club, with members contributing to
-                    coaching, event planning, and club management. Our ethos is
-                    built on community spirit, with members supporting each
-                    other to achieve their goals, whether that&apos;s completing
-                    their first triathlon or qualifying for international
-                    competition.
+                    coaching, event planning, and club management.
+                  </p>
+                  <p>
+                    Our ethos is built on community spirit, with members
+                    supporting each other to achieve their goals, whether
+                    that&apos;s completing their first triathlon or qualifying
+                    for international competition.
                   </p>
                 </div>
               </div>
             </div>
             <div className="relative h-full w-full">
               <Image
-                width={3500}
-                height={2333}
+                width={2000}
+                height={1333}
                 src={"/juniors/bike-on-ground.jpg"}
                 alt="Bike on the ground at side of road"
                 className="h-full w-full object-cover"
@@ -111,12 +119,14 @@ export default function AboutUs() {
                   <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl rounded-xl border-b-2 border-white pb-3">
                     Fully affiliated with Triathlon Ireland
                   </h1>
-                  <p className="border-t-2 border-brandGreen pt-3 rounded-xl">
+                  <p className="border-t-2 border-brandGreen py-3 rounded-xl">
                     NWTC is fully aligened with Triathlon Ireland, ensuring that
                     our coaching, safeguarding, and safety practices meet the
-                    highest standards. Our dedicated, qualified coaches are
-                    committed to creating a positive and inclusive training
-                    environment.
+                    highest standards.
+                  </p>
+                  <p>
+                    Our dedicated, qualified coaches are committed to creating a
+                    positive and inclusive training environment.
                   </p>
                 </div>
               </div>
