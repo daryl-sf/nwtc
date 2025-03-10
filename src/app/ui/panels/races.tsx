@@ -1,6 +1,7 @@
 "use client";
 import { Carousel } from "@material-tailwind/react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Races() {
   return (
@@ -48,6 +49,12 @@ export default function Races() {
                     keeping his story alive and inspiring the next generation of
                     athletes.
                   </p>
+                  <Link
+                    href="/races/buncrana-duathlon"
+                    className="text-brandGreen font-bold hover:underline"
+                  >
+                    Read more
+                  </Link>
                 </div>
               </div>
             </div>
@@ -71,6 +78,12 @@ export default function Races() {
                     course is flat and fast and is perfect for beginners and
                     seasoned athletes alike.
                   </p>
+                  <Link
+                    href="/races/liam-ball-triathlon"
+                    className="text-brandGreen font-bold hover:underline"
+                  >
+                    Read more
+                  </Link>
                 </div>
               </div>
             </div>
