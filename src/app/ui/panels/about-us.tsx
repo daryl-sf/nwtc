@@ -28,9 +28,9 @@ export default function AboutUs() {
           >
             <div className="relative h-full w-full">
               <Image
-                width={3024}
-                height={2324}
-                src={"/about-us/irish-runner.jpg"}
+                width={2000}
+                height={1354}
+                src={"/about-us/reid.jpg"}
                 alt="Bikes in transition area"
                 className="h-full w-full object-cover"
               />
