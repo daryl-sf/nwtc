@@ -4,7 +4,7 @@ import MainTitle from "@/app/ui/main-title";
 export default function Home() {
   return (
     <div className="snap-always snap-center" id="home">
-      <div className="relative min-h-screen flex bg-brandBlue">
+      <div className="relative min-h-screen flex bg-brandBlue pb-20">
         <div className="container max-w-screen-xl mx-auto flex flex-col gap-8 justify-center items-center text-base ">
           <div className="flex flex-col gap-8 items-center justify-center">
             <Image
