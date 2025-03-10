@@ -155,13 +155,14 @@ export default function Juniors() {
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
                   <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl rounded-xl border-b-2 border-white pb-3">
-                    Join Us
+                    Want to become a triathlete?
                   </h1>
                   <p className="border-t-2 border-brandGreen py-3 rounded-xl">
                     Whether your child is new to triathlon or looking to improve
                     their race performance, NWTC offers a fantastic opportunity
                     to train, learn, and grow in a supportive team setting.
                   </p>
+                  <p>Join us</p>
                   <div className="flex flex-wrap justify-around">
                     <BrandLink
                       href="https://www.facebook.com/north.westtriathlon/"
