@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "@/app/globals.css";
 import { geistMono, geistSans } from "@/app/ui/fonts";
 import { BrandLink } from "@/app/ui/link";
 import Image from "next/image";
-import FloatingMenu from "./ui/nav/floating";
+import FloatingMenu from "@/app/ui/nav/floating";
 
 export const metadata: Metadata = {
   title: "Northwest Triathlon Club",
@@ -22,7 +22,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background scroll-smooth`}
       >
         {children}
-        <footer className="text-white p-4 text-center border-t border-brandGreen bg-brandBlue">
+        <footer className="text-white p-4 text-center border-t border-brandGreen bg-brandBlue sticky bottom-0 hidden md:block">
           <ul className="flex justify-between sm:justify-center flex-wrap gap-4">
             <li>
               <BrandLink
