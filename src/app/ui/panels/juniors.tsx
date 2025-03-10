@@ -134,13 +134,31 @@ export default function Juniors() {
                   <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl rounded-xl border-b-2 border-white pb-3">
                     Fully affiliated with Triathlon Ireland
                   </h1>
-                  <p className="border-t-2 border-brandGreen pt-3 rounded-xl">
-                    NWTC is fully aligened with Triathlon Ireland, ensuring that
-                    our coaching, safeguarding, and safety practices meet the
-                    highest standards. Our dedicated, qualified coaches are
-                    committed to creating a positive and inclusive training
-                    environment.
-                  </p>
+                  <div className="border-t-2 border-brandGreen pt-3 rounded-xl">
+                    <div className="flex justify-around mb-3">
+                      <Image
+                        width={512}
+                        height={332}
+                        alt="Triathlon Ireland logo"
+                        src="/juniors/triathlon-ireland-logo.png"
+                        className="h-28 w-auto"
+                      />
+                      <Image
+                        src="/nwtc-logo.PNG"
+                        alt="NWTC Logo"
+                        width={536}
+                        height={536}
+                        className="border-white border rounded-full hover:border-brandGreen h-28 w-auto"
+                      />
+                    </div>
+                    <p>
+                      NWTC is fully aligened with Triathlon Ireland, ensuring
+                      that our coaching, safeguarding, and safety practices meet
+                      the highest standards. Our dedicated, qualified coaches
+                      are committed to creating a positive and inclusive
+                      training environment.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
