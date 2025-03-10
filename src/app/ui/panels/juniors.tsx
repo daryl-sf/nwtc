@@ -33,7 +33,7 @@ export default function Juniors() {
                 width={2000}
                 height={1333}
                 src={"/juniors/single-swimmer.jpg"}
-                alt="Bikes in transition area"
+                alt="Single swimmer performing front crawl"
                 className="h-full w-full object-cover"
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">

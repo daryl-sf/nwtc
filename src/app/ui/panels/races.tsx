@@ -55,7 +55,7 @@ export default function Races() {
                 width={2000}
                 height={1333}
                 src={"/races/cyclists-racing.jpg"}
-                alt="Bikes in transition area"
+                alt="Triathletes racing"
                 className="h-full w-full object-cover"
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">

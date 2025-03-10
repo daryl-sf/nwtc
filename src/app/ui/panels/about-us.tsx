@@ -28,10 +28,10 @@ export default function AboutUs() {
           >
             <div className="relative h-full w-full">
               <Image
-                width={2000}
-                height={1354}
+                width={1440}
+                height={810}
                 src={"/about-us/reid.jpg"}
-                alt="Bikes in transition area"
+                alt="Aileen Reid crossing finish line"
                 className="h-full w-full object-cover"
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
@@ -58,7 +58,7 @@ export default function AboutUs() {
                 width={2000}
                 height={1335}
                 src={"/about-us/swimmers.jpg"}
-                alt="Bikes in transition area"
+                alt="Swimmers swomming in pool"
                 className="h-full w-full object-cover"
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
@@ -85,7 +85,7 @@ export default function AboutUs() {
                 width={5071}
                 height={3379}
                 src={"/about-us/running-legs.jpg"}
-                alt="Bikes in transition area"
+                alt="Legs running"
                 className="h-full w-full object-cover"
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">

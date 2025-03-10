@@ -123,19 +123,49 @@ export default function Training() {
                   <p className="border-t-2 border-brandGreen py-3 rounded-xl">
                     During summer months, we host open water swimming sessions
                     at local lakes and beaches. Wetsuits, swim caps, and swim
-                    bouy are required.
+                    bouy are required. Follow us on social media for updates.
                   </p>
                   <ul className="text-left flex flex-col gap-6">
-                    <li className="flex items-center gap-2 justify-between flex-wrap">
+                    <li className="flex items-center gap-2 justify-around flex-wrap mb-6">
                       <span className="flex gap-2">
-                        <MapPinIcon className="w-6 h-6 text-red-600" /> Creggan
-                        Resevoir, Derry
+                        <MapPinIcon className="w-6 h-6 text-red-600" /> Various
                       </span>
                       <span className="flex gap-2">
-                        <ClockIcon className="w-6 h-6" /> Mondays 6pm
+                        <ClockIcon className="w-6 h-6" /> Various
                       </span>
                     </li>
                   </ul>
+                  <div className="flex flex-wrap justify-around">
+                    <BrandLink
+                      href="https://www.facebook.com/north.westtriathlon/"
+                      target="_blank"
+                    >
+                      <Image
+                        aria-hidden
+                        src="/social-media/Facebook_Logo_Primary.png"
+                        alt="Facebook"
+                        width={2084}
+                        height={2084}
+                        className="w-6 h-6"
+                      />
+                      Facebook <ArrowTopRightOnSquareIcon className="w-6 h-6" />
+                    </BrandLink>
+                    <BrandLink
+                      href="https://www.instagram.com/northwest.triathlonclub/"
+                      target="_blank"
+                    >
+                      <Image
+                        aria-hidden
+                        src="/social-media/Instagram_Glyph_Gradient.png"
+                        alt="Instagram"
+                        width={500}
+                        height={500}
+                        className="w-6 h-6"
+                      />
+                      Instagram{" "}
+                      <ArrowTopRightOnSquareIcon className="w-6 h-6" />
+                    </BrandLink>
+                  </div>
                 </div>
               </div>
             </div>

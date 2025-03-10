@@ -33,7 +33,7 @@ export default function Join() {
                 width={2000}
                 height={1324}
                 src={"/join/runners-on-bridge.jpg"}
-                alt="Athlete swimming in pool"
+                alt="A grou of runner on a bridge"
                 className="h-full w-full object-cover"
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
@@ -61,7 +61,7 @@ export default function Join() {
                 width={2000}
                 height={1333}
                 src={"/join/swimmer-open-water.jpg"}
-                alt="Athlete swimming in pool"
+                alt="Single swimmer in open water"
                 className="h-full w-full object-cover"
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
