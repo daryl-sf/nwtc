@@ -32,8 +32,8 @@ export default function Juniors() {
               <Image
                 width={2000}
                 height={1333}
-                src={"/juniors/single-swimmer.jpg"}
-                alt="Single swimmer performing front crawl"
+                src={"/juniors/lukemccarron.jpg"}
+                alt="Luke McCarron on a bike"
                 className="h-full w-full object-cover"
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">

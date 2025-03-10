@@ -30,8 +30,8 @@ export default function Races() {
               <Image
                 width={1500}
                 height={999}
-                src={"/races/bike-transition.jpg"}
-                alt="Bikes in transition area"
+                src={"/races/liamball.jpg"}
+                alt="Liam Ball mural"
                 className="h-full w-full object-cover"
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
@@ -40,12 +40,13 @@ export default function Races() {
                     Liam Ball Sprint Triathlon
                   </h1>
                   <p className="border-t-2 border-brandGreen pt-3 rounded-xl">
-                    The Liam Ball Triathlon is one of Ireland&apos;s oldest
-                    triathlons and its also one of the most popular. The race is
-                    a perfect for everyone from a complete beginner trying
-                    triathlon for the first time or seasoned triathletes looking
-                    for a fast course. The Liam Ball consists of a 750m pool
-                    swim, a 20km bike and a 5km run.
+                    Liam Ball, a proud Derry swimmer, represented Ireland at the
+                    1968 & 1972 Olympics. A remarkable athlete, he left a
+                    lasting legacy despite his untimely death in 1984 at 33. To
+                    honour his memory, NWTC named their annual sprint triathlon
+                    after him. Year after year the event continues to grow,
+                    keeping his story alive and inspiring the next generation of
+                    athletes.
                   </p>
                 </div>
               </div>
