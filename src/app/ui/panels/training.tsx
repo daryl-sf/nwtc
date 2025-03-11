@@ -19,6 +19,7 @@ export default function Training() {
           >
             <div>
               <Image
+                priority
                 width={1500}
                 height={800}
                 src={"/training/pool-swimming.jpg"}
@@ -61,6 +62,7 @@ export default function Training() {
             </div>
             <div>
               <Image
+                priority
                 src="/training/running.jpg"
                 alt="Athlete running on road"
                 width={1200}
@@ -94,6 +96,7 @@ export default function Training() {
             </div>
             <div>
               <Image
+                priority
                 src="/training/open-water-swimming.jpg"
                 alt="Athlete swimming in open water"
                 width={1200}
@@ -126,6 +129,7 @@ export default function Training() {
                       target="_blank"
                     >
                       <Image
+                        priority
                         aria-hidden
                         src="/social-media/Facebook_Logo_Primary.png"
                         alt="Facebook"
@@ -140,6 +144,7 @@ export default function Training() {
                       target="_blank"
                     >
                       <Image
+                        priority
                         aria-hidden
                         src="/social-media/Instagram_Glyph_Gradient.png"
                         alt="Instagram"
@@ -156,6 +161,7 @@ export default function Training() {
             </div>
             <div>
               <Image
+                priority
                 src="/training/cycling.jpg"
                 alt="Two female athletes cycling on road"
                 width={1200}
@@ -189,6 +195,7 @@ export default function Training() {
                       target="_blank"
                     >
                       <Image
+                        priority
                         aria-hidden
                         src="/social-media/Facebook_Logo_Primary.png"
                         alt="Facebook"
@@ -203,6 +210,7 @@ export default function Training() {
                       target="_blank"
                     >
                       <Image
+                        priority
                         aria-hidden
                         src="/social-media/Instagram_Glyph_Gradient.png"
                         alt="Instagram"

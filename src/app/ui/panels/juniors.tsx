@@ -15,6 +15,7 @@ export default function Juniors() {
           >
             <div>
               <Image
+                priority
                 width={2000}
                 height={1333}
                 src={"/juniors/lukemccarron.jpg"}
@@ -38,6 +39,7 @@ export default function Juniors() {
             </div>
             <div>
               <Image
+                priority
                 width={1500}
                 height={1125}
                 src={"/juniors/cyclists.jpg"}
@@ -60,6 +62,7 @@ export default function Juniors() {
             </div>
             <div>
               <Image
+                priority
                 width={1660}
                 height={1106}
                 src={"/juniors/swim-line-up.jpg"}
@@ -84,6 +87,7 @@ export default function Juniors() {
             </div>
             <div>
               <Image
+                priority
                 width={2000}
                 height={1436}
                 src={"/juniors/runners.jpg"}
@@ -108,6 +112,7 @@ export default function Juniors() {
             </div>
             <div>
               <Image
+                priority
                 width={2000}
                 height={1333}
                 src={"/juniors/bike-on-ground.jpg"}
@@ -122,6 +127,7 @@ export default function Juniors() {
                   <div className="border-t-2 border-brandGreen pt-3 rounded-xl">
                     <div className="flex justify-around mb-3">
                       <Image
+                        priority
                         width={512}
                         height={332}
                         alt="Triathlon Ireland logo"
@@ -129,6 +135,7 @@ export default function Juniors() {
                         className="h-28 w-auto"
                       />
                       <Image
+                        priority
                         src="/nwtc-logo.PNG"
                         alt="NWTC Logo"
                         width={536}
@@ -149,6 +156,7 @@ export default function Juniors() {
             </div>
             <div>
               <Image
+                priority
                 width={2000}
                 height={1122}
                 src={"/juniors/cyclist.jpg"}
@@ -172,6 +180,7 @@ export default function Juniors() {
                       target="_blank"
                     >
                       <Image
+                        priority
                         aria-hidden
                         src="/social-media/Facebook_Logo_Primary.png"
                         alt="Facebook"
@@ -186,6 +195,7 @@ export default function Juniors() {
                       target="_blank"
                     >
                       <Image
+                        priority
                         aria-hidden
                         src="/social-media/Instagram_Glyph_Gradient.png"
                         alt="Instagram"

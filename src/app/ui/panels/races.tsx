@@ -14,6 +14,7 @@ export default function Races() {
           >
             <div>
               <Image
+                priority
                 width={1500}
                 height={999}
                 src={"/races/liamball.jpg"}
@@ -45,6 +46,7 @@ export default function Races() {
             </div>
             <div>
               <Image
+                priority
                 width={2000}
                 height={1333}
                 src={"/races/cyclists-racing.jpg"}

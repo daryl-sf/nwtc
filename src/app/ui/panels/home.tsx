@@ -14,6 +14,7 @@ export default function Home() {
               width={536}
               height={536}
               className="border-white border rounded-full hover:border-brandGreen h-56 w-56"
+              priority
             />
 
             <MainTitle />

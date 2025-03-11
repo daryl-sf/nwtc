@@ -15,6 +15,7 @@ export default function Join() {
           >
             <div>
               <Image
+                priority
                 width={2000}
                 height={1324}
                 src={"/join/runners-on-bridge.jpg"}
@@ -43,6 +44,7 @@ export default function Join() {
             </div>
             <div>
               <Image
+                priority
                 width={2000}
                 height={1333}
                 src={"/join/swimmer-open-water.jpg"}
@@ -66,6 +68,7 @@ export default function Join() {
                         target="_blank"
                       >
                         <Image
+                          priority
                           aria-hidden
                           src="/social-media/Facebook_Logo_Primary.png"
                           alt="Facebook"
@@ -83,6 +86,7 @@ export default function Join() {
                         target="_blank"
                       >
                         <Image
+                          priority
                           aria-hidden
                           src="/social-media/Instagram_Glyph_Gradient.png"
                           alt="Instagram"

@@ -18,6 +18,7 @@ export default function AboutUs() {
                 src={"/about-us/reid.jpg"}
                 alt="Aileen Reid crossing finish line"
                 className="h-full w-full object-cover"
+                priority
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
@@ -45,6 +46,7 @@ export default function AboutUs() {
                 src={"/about-us/swimmers.jpg"}
                 alt="Swimmers swomming in pool"
                 className="h-full w-full object-cover"
+                priority
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
@@ -72,6 +74,7 @@ export default function AboutUs() {
                 src={"/about-us/running-legs.jpg"}
                 alt="Legs running"
                 className="h-full w-full object-cover"
+                priority
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
@@ -98,6 +101,7 @@ export default function AboutUs() {
                 src={"/juniors/bike-on-ground.jpg"}
                 alt="Bike on the ground at side of road"
                 className="h-full w-full object-cover"
+                priority
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
