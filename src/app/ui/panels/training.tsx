@@ -10,11 +10,11 @@ import SwipeableCarousel from "@/app/ui/SwipeableCarousel";
 
 export default function Training() {
   return (
-    <div className="snap-always snap-center" id="training">
-      <div className="relative min-h-screen max-h-screen flex bg-brandBlue pb-20">
+    <div className="snap-always snap-start" id="training">
+      <div className="relative min-h-dvh max-h-dvh flex bg-brandBlue pb-20">
         <div className="container max-w-screen-xl mx-auto text-xl md:pt-4">
           <SwipeableCarousel
-            className="md:rounded-xl md:h-[calc(100vh-2rem)] h-screen"
+            className="md:rounded-xl md:h-[calc(100dvh-2rem)] h-dvh"
             id="training"
           >
             <div>

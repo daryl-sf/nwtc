@@ -6,10 +6,10 @@ import Image from "next/image";
 export default function Races() {
   return (
     <div className="snap-always snap-start" id="races">
-      <div className="relative min-h-screen max-h-screen flex bg-brandBlue pb-20">
+      <div className="relative min-h-dvh max-h-dvh flex bg-brandBlue pb-20">
         <div className="container max-w-screen-xl mx-auto text-xl md:pt-4">
           <SwipeableCarousel
-            className="md:rounded-xl md:h-[calc(100vh-2rem)] h-screen"
+            className="md:rounded-xl md:h-[calc(100dvh-2rem)] h-dvh"
             id="races"
           >
             <div>
