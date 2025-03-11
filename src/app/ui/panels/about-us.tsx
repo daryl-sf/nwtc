@@ -1,32 +1,17 @@
 "use client";
 import Image from "next/image";
-import { Carousel } from "@material-tailwind/react";
+import SwipeableCarousel from "@/app/ui/SwipeableCarousel";
 
 export default function AboutUs() {
   return (
     <div className="snap-always snap-start" id="about-us">
       <div className="relative min-h-screen max-h-screen flex bg-brandBlue pb-20">
-        <div className="container max-w-screen-xl mx-auto text-2xl pt-4">
-          <Carousel
-            className="rounded-xl"
-            placeholder={undefined}
-            onPointerEnterCapture={console.log}
-            onPointerLeaveCapture={console.log}
-            navigation={({ setActiveIndex, activeIndex, length }) => (
-              <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
-                {new Array(length).fill("").map((_, i) => (
-                  <span
-                    key={i}
-                    className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                      activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
-                    }`}
-                    onClick={() => setActiveIndex(i)}
-                  />
-                ))}
-              </div>
-            )}
+        <div className="container max-w-screen-xl mx-auto text-xl md:pt-4">
+          <SwipeableCarousel
+            className="md:rounded-xl md:h-[calc(100vh-2rem)] h-screen"
+            id="about-us"
           >
-            <div className="relative h-full w-full">
+            <div>
               <Image
                 width={1440}
                 height={810}
@@ -53,7 +38,7 @@ export default function AboutUs() {
                 </div>
               </div>
             </div>
-            <div className="relative h-full w-full">
+            <div>
               <Image
                 width={2000}
                 height={1335}
@@ -80,7 +65,7 @@ export default function AboutUs() {
                 </div>
               </div>
             </div>
-            <div className="relative h-full w-full">
+            <div>
               <Image
                 width={5071}
                 height={3379}
@@ -106,7 +91,7 @@ export default function AboutUs() {
                 </div>
               </div>
             </div>
-            <div className="relative h-full w-full">
+            <div>
               <Image
                 width={2000}
                 height={1333}
@@ -149,7 +134,7 @@ export default function AboutUs() {
                 </div>
               </div>
             </div>
-          </Carousel>
+          </SwipeableCarousel>
         </div>
       </div>
     </div>

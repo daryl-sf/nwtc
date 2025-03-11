@@ -1,38 +1,23 @@
 "use client";
 import Image from "next/image";
-import { Carousel } from "@material-tailwind/react";
 import { MapPinIcon } from "@heroicons/react/24/solid";
 import {
   ArrowTopRightOnSquareIcon,
   ClockIcon,
 } from "@heroicons/react/24/outline";
 import { BrandLink } from "@/app/ui/link";
+import SwipeableCarousel from "@/app/ui/SwipeableCarousel";
 
 export default function Training() {
   return (
     <div className="snap-always snap-center" id="training">
       <div className="relative min-h-screen max-h-screen flex bg-brandBlue pb-20">
-        <div className="container max-w-screen-xl mx-auto text-2xl pt-4">
-          <Carousel
-            className="rounded-xl"
-            placeholder={undefined}
-            onPointerEnterCapture={console.log}
-            onPointerLeaveCapture={console.log}
-            navigation={({ setActiveIndex, activeIndex, length }) => (
-              <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
-                {new Array(length).fill("").map((_, i) => (
-                  <span
-                    key={i}
-                    className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                      activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
-                    }`}
-                    onClick={() => setActiveIndex(i)}
-                  />
-                ))}
-              </div>
-            )}
+        <div className="container max-w-screen-xl mx-auto text-xl md:pt-4">
+          <SwipeableCarousel
+            className="md:rounded-xl md:h-[calc(100vh-2rem)] h-screen"
+            id="training"
           >
-            <div className="relative h-full w-full">
+            <div>
               <Image
                 width={1500}
                 height={800}
@@ -74,7 +59,7 @@ export default function Training() {
                 </div>
               </div>
             </div>
-            <div className="relative h-full w-full">
+            <div>
               <Image
                 src="/training/running.jpg"
                 alt="Athlete running on road"
@@ -107,7 +92,7 @@ export default function Training() {
                 </div>
               </div>
             </div>
-            <div className="relative h-full w-full">
+            <div>
               <Image
                 src="/training/open-water-swimming.jpg"
                 alt="Athlete swimming in open water"
@@ -169,7 +154,7 @@ export default function Training() {
                 </div>
               </div>
             </div>
-            <div className="relative h-full w-full">
+            <div>
               <Image
                 src="/training/cycling.jpg"
                 alt="Two female athletes cycling on road"
@@ -232,7 +217,7 @@ export default function Training() {
                 </div>
               </div>
             </div>
-          </Carousel>
+          </SwipeableCarousel>
         </div>
       </div>
     </div>

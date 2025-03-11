@@ -1,32 +1,18 @@
 "use client";
-import { Carousel } from "@material-tailwind/react";
+import SwipeableCarousel from "@/app/ui/SwipeableCarousel";
 import Image from "next/image";
+// import Link from "next/link";
 
 export default function Races() {
   return (
     <div className="snap-always snap-start" id="races">
       <div className="relative min-h-screen max-h-screen flex bg-brandBlue pb-20">
-        <div className="container max-w-screen-xl mx-auto text-2xl pt-4">
-          <Carousel
-            className="rounded-xl"
-            placeholder={undefined}
-            onPointerEnterCapture={console.log}
-            onPointerLeaveCapture={console.log}
-            navigation={({ setActiveIndex, activeIndex, length }) => (
-              <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
-                {new Array(length).fill("").map((_, i) => (
-                  <span
-                    key={i}
-                    className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                      activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
-                    }`}
-                    onClick={() => setActiveIndex(i)}
-                  />
-                ))}
-              </div>
-            )}
+        <div className="container max-w-screen-xl mx-auto text-xl md:pt-4">
+          <SwipeableCarousel
+            className="md:rounded-xl md:h-[calc(100vh-2rem)] h-screen"
+            id="races"
           >
-            <div className="relative h-full w-full">
+            <div>
               <Image
                 width={1500}
                 height={999}
@@ -48,10 +34,16 @@ export default function Races() {
                     keeping his story alive and inspiring the next generation of
                     athletes.
                   </p>
+                  {/* <Link
+                    href="/races/buncrana-duathlon"
+                    className="text-brandGreen font-bold hover:underline"
+                  >
+                    Read more
+                  </Link> */}
                 </div>
               </div>
             </div>
-            <div className="relative h-full w-full">
+            <div>
               <Image
                 width={2000}
                 height={1333}
@@ -71,10 +63,16 @@ export default function Races() {
                     course is flat and fast and is perfect for beginners and
                     seasoned athletes alike.
                   </p>
+                  {/* <Link
+                    href="/races/liam-ball-triathlon"
+                    className="text-brandGreen font-bold hover:underline"
+                  >
+                    Read more
+                  </Link> */}
                 </div>
               </div>
             </div>
-          </Carousel>
+          </SwipeableCarousel>
         </div>
       </div>
     </div>
