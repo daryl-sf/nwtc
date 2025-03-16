@@ -10,12 +10,12 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  /* :root {
     --background: #ededed;
     --foreground: #102F55;
     --brand-green: #7ED957;
     --brand-blue: #102F55;
-  }
+  } */
 }
 
 body {

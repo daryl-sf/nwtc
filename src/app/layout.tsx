@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background scroll-smooth`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background scroll-smooth `}
       >
         {children}
         {/* <footer className="text-white p-4 text-center border-t border-brandGreen bg-brandBlue sticsky bottom-0 hidden md:block">
