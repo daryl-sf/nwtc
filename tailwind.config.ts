@@ -11,8 +11,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        brandGreen: 'var(--brand-green)',
-        brandBlue: 'var(--brand-blue)',
+        brandGreen: "var(--brand-green)",
+        brandBlue: "var(--brand-blue)",
       },
     },
   },

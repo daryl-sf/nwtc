@@ -6,11 +6,11 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 export default function Juniors() {
   return (
-    <div className="snap-always snap-start" id="juniors">
-      <div className="relative min-h-dvh max-h-dvh flex bg-brandBlue pb-20">
-        <div className="container max-w-screen-xl mx-auto text-xl md:pt-4">
+    <div className="snap-start snap-always" id="juniors">
+      <div className="relative flex max-h-dvh min-h-dvh bg-brandBlue pb-20">
+        <div className="container mx-auto max-w-screen-xl text-xl md:pt-4">
           <SwipeableCarousel
-            className="md:rounded-xl md:h-[calc(100dvh-2rem)] h-dvh"
+            className="h-dvh md:h-[calc(100dvh-2rem)] md:rounded-xl"
             id="juniors"
           >
             <div>
@@ -24,10 +24,10 @@ export default function Juniors() {
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
-                  <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl rounded-xl border-b-2 border-white pb-3">
+                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
                     Junior Section
                   </h1>
-                  <p className="border-t-2 border-brandGreen pt-3 rounded-xl">
+                  <p className="rounded-xl border-t-2 border-brandGreen pt-3">
                     At NWTC, we are passionate about developing young athletes
                     in a fun, supportive, and safe environment. Our junior
                     section provides structured coaching for aspiring
@@ -48,10 +48,10 @@ export default function Juniors() {
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
-                  <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl rounded-xl border-b-2 border-white pb-3">
+                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
                     Open to all committed young athletes
                   </h1>
-                  <p className="border-t-2 border-brandGreen pt-3 rounded-xl">
+                  <p className="rounded-xl border-t-2 border-brandGreen pt-3">
                     Age is not a limiting factor at NWTC. If your child
                     canconfidently swim 100m (4 lengths of a 25m pool) in under
                     two minutes and do so safely, we can work with them - as
@@ -71,10 +71,10 @@ export default function Juniors() {
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
-                  <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl rounded-xl border-b-2 border-white pb-3">
+                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
                     A proven pathway to success
                   </h1>
-                  <p className="border-t-2 border-brandGreen pt-3 rounded-xl">
+                  <p className="rounded-xl border-t-2 border-brandGreen pt-3">
                     Our junior club has a strong track record of developing
                     top-quality atheletes. Over the years, we have proudly seen
                     four of our juniors progress to represent Ireland at various
@@ -96,10 +96,10 @@ export default function Juniors() {
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
-                  <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl rounded-xl border-b-2 border-white pb-3">
+                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
                     Keeping costs low
                   </h1>
-                  <p className="border-t-2 border-brandGreen pt-3 rounded-xl">
+                  <p className="rounded-xl border-t-2 border-brandGreen pt-3">
                     At NWTC, we believe in making triathlon as accessbile as
                     apossible. We susidise junior training costs through our
                     senior club to ensure that young atheltes have the best
@@ -121,11 +121,11 @@ export default function Juniors() {
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
-                  <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl rounded-xl border-b-2 border-white pb-3">
+                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
                     Fully affiliated with Triathlon Ireland
                   </h1>
-                  <div className="border-t-2 border-brandGreen pt-3 rounded-xl">
-                    <div className="flex justify-around mb-3">
+                  <div className="rounded-xl border-t-2 border-brandGreen pt-3">
+                    <div className="mb-3 flex justify-around">
                       <Image
                         priority
                         width={512}
@@ -140,7 +140,7 @@ export default function Juniors() {
                         alt="NWTC Logo"
                         width={536}
                         height={536}
-                        className="border-white border rounded-full hover:border-brandGreen h-28 w-auto"
+                        className="h-28 w-auto rounded-full border border-white hover:border-brandGreen"
                       />
                     </div>
                     <p>
@@ -165,10 +165,10 @@ export default function Juniors() {
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
-                  <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl rounded-xl border-b-2 border-white pb-3">
+                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
                     Want to become a triathlete?
                   </h1>
-                  <p className="border-t-2 border-brandGreen py-3 rounded-xl">
+                  <p className="rounded-xl border-t-2 border-brandGreen py-3">
                     Whether your child is new to triathlon or looking to improve
                     their race performance, NWTC offers a fantastic opportunity
                     to train, learn, and grow in a supportive team setting.
@@ -186,9 +186,9 @@ export default function Juniors() {
                         alt="Facebook"
                         width={2084}
                         height={2084}
-                        className="w-6 h-6"
+                        className="h-6 w-6"
                       />
-                      Facebook <ArrowTopRightOnSquareIcon className="w-6 h-6" />
+                      Facebook <ArrowTopRightOnSquareIcon className="h-6 w-6" />
                     </BrandLink>
                     <BrandLink
                       href="https://www.instagram.com/northwest.triathlonclub/"
@@ -201,10 +201,10 @@ export default function Juniors() {
                         alt="Instagram"
                         width={500}
                         height={500}
-                        className="w-6 h-6"
+                        className="h-6 w-6"
                       />
                       Instagram{" "}
-                      <ArrowTopRightOnSquareIcon className="w-6 h-6" />
+                      <ArrowTopRightOnSquareIcon className="h-6 w-6" />
                     </BrandLink>
                   </div>
                 </div>

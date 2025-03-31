@@ -7,7 +7,7 @@ export default function MainTitle() {
     <TypeAnimation
       wrapper="h1"
       sequence={["North West Triathlon Club"]}
-      className={`text-4xl text-center text-wrap ${geistMono.className} text-white`}
+      className={`text-wrap text-center text-4xl ${geistMono.className} text-white`}
       cursor={false}
     />
   );

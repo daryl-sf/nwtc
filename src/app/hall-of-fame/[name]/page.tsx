@@ -1,7 +1,8 @@
 import React from "react";
-import Image from "next/image";
-import data from "../data.json";
+import data from "@/app/hall-of-fame/data.json";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
+import AthleteCard from "@/app/ui/athlete-card";
 
 type Person = {
   name: string;
@@ -16,11 +17,21 @@ type Person = {
 
 const typedData: Record<string, Person> = data;
 
-const HallOfFamePage = async ({
-  params,
-}: {
+type Props = {
   params: Promise<{ name: string }>;
-}) => {
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { name } = await params;
+  const person = typedData[name];
+
+  return {
+    title: `${person.name} - Hall of Fame`,
+    description: person.bio,
+  };
+}
+
+const HallOfFamePage = async ({ params }: Props) => {
   const { name } = await params;
   const person = typedData[name];
 
@@ -29,20 +40,11 @@ const HallOfFamePage = async ({
   }
 
   return (
-    <div>
-      <h1 className=" text-4xl font-bold">{person.name}</h1>
-      <div>
-        <Image
-          src={`${person.image.src}`}
-          alt={person.image.alt}
-          width={person.image.width}
-          height={person.image.height}
-          className="rounded-lg w-full md:w-min float-start mr-2"
-        />
-        <pre className="container text-ellipsis text-wrap mt-4">
-          {person.bio}
-        </pre>
-      </div>
+    <div className="flex flex-col gap-4 md:flex-row">
+      <AthleteCard athlete={person} />
+      <pre className="container text-wrap rounded-lg bg-white p-4 text-justify text-brandBlue">
+        {person.bio}
+      </pre>
     </div>
   );
 };

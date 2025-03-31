@@ -10,11 +10,11 @@ import SwipeableCarousel from "@/app/ui/SwipeableCarousel";
 
 export default function Training() {
   return (
-    <div className="snap-always snap-start" id="training">
-      <div className="relative min-h-dvh max-h-dvh flex bg-brandBlue pb-20">
-        <div className="container max-w-screen-xl mx-auto text-xl md:pt-4">
+    <div className="snap-start snap-always" id="training">
+      <div className="relative flex max-h-dvh min-h-dvh bg-brandBlue pb-20">
+        <div className="container mx-auto max-w-screen-xl text-xl md:pt-4">
           <SwipeableCarousel
-            className="md:rounded-xl md:h-[calc(100dvh-2rem)] h-dvh"
+            className="h-dvh md:h-[calc(100dvh-2rem)] md:rounded-xl"
             id="training"
           >
             <div>
@@ -28,32 +28,32 @@ export default function Training() {
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
-                  <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl rounded-xl border-b-2 border-white pb-3">
+                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
                     Pool Swimming
                   </h1>
-                  <p className="border-t-2 border-brandGreen py-3 rounded-xl">
+                  <p className="rounded-xl border-t-2 border-brandGreen py-3">
                     Join our structured pool swimming sessions to improve your
                     technique, speed, and endurance. With each lane catering to
                     a different ability level, our sessions are suitable for all
                     members.
                   </p>
-                  <ul className="text-left flex flex-col gap-6">
-                    <li className="flex gap-2 justify-between flex-wrap">
+                  <ul className="flex flex-col gap-6 text-left">
+                    <li className="flex flex-wrap justify-between gap-2">
                       <span className="flex items-center gap-2">
-                        <MapPinIcon className="w-6 h-6 text-red-600" /> Foyle
+                        <MapPinIcon className="h-6 w-6 text-red-600" /> Foyle
                         Arena, Derry
                       </span>
                       <span className="flex items-center gap-2">
-                        <ClockIcon className="w-6 h-6" /> Tuesdays 8:30pm
+                        <ClockIcon className="h-6 w-6" /> Tuesdays 8:30pm
                       </span>
                     </li>
-                    <li className="flex gap-2 justify-between flex-wrap">
+                    <li className="flex flex-wrap justify-between gap-2">
                       <span className="flex gap-2">
-                        <MapPinIcon className="w-6 h-6 text-red-600" />{" "}
+                        <MapPinIcon className="h-6 w-6 text-red-600" />{" "}
                         Templemore Complex, Derry
                       </span>
                       <span className="flex items-center gap-2">
-                        <ClockIcon className="w-6 h-6" /> Thursdays 6pm
+                        <ClockIcon className="h-6 w-6" /> Thursdays 6pm
                       </span>
                     </li>
                   </ul>
@@ -71,23 +71,23 @@ export default function Training() {
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
-                  <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl rounded-xl border-b-2 border-white pb-3">
+                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
                     Running
                   </h1>
-                  <p className="border-t-2 border-brandGreen py-3 rounded-xl">
+                  <p className="rounded-xl border-t-2 border-brandGreen py-3">
                     Our weekly running sessions are designed to help you build
                     speed, strength, and stamina. Training plans are designed
                     with the race calendar in mind, with a focus on improving
                     performance and reducing injury risk.
                   </p>
-                  <ul className="text-left flex flex-col gap-6">
-                    <li className="flex gap-2 justify-between flex-wrap">
+                  <ul className="flex flex-col gap-6 text-left">
+                    <li className="flex flex-wrap justify-between gap-2">
                       <span className="flex items-center gap-2">
-                        <MapPinIcon className="w-6 h-6 text-red-600" />{" "}
+                        <MapPinIcon className="h-6 w-6 text-red-600" />{" "}
                         Templemore Complex, Derry
                       </span>
                       <span className="flex items-center gap-2">
-                        <ClockIcon className="w-6 h-6" /> Wednesday 6:15pm
+                        <ClockIcon className="h-6 w-6" /> Wednesday 6:15pm
                       </span>
                     </li>
                   </ul>
@@ -105,21 +105,21 @@ export default function Training() {
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
-                  <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl rounded-xl border-b-2 border-white pb-3">
+                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
                     Open Water Swimming
                   </h1>
-                  <p className="border-t-2 border-brandGreen py-3 rounded-xl">
+                  <p className="rounded-xl border-t-2 border-brandGreen py-3">
                     During summer months, we host open water swimming sessions
                     at local lakes and beaches. Wetsuits, swim caps, and swim
                     bouy are required. Follow us on social media for updates.
                   </p>
-                  <ul className="text-left flex flex-col gap-6">
-                    <li className="flex items-center gap-2 justify-around flex-wrap mb-6">
+                  <ul className="flex flex-col gap-6 text-left">
+                    <li className="mb-6 flex flex-wrap items-center justify-around gap-2">
                       <span className="flex gap-2">
-                        <MapPinIcon className="w-6 h-6 text-red-600" /> Various
+                        <MapPinIcon className="h-6 w-6 text-red-600" /> Various
                       </span>
                       <span className="flex gap-2">
-                        <ClockIcon className="w-6 h-6" /> Various
+                        <ClockIcon className="h-6 w-6" /> Various
                       </span>
                     </li>
                   </ul>
@@ -135,9 +135,9 @@ export default function Training() {
                         alt="Facebook"
                         width={2084}
                         height={2084}
-                        className="w-6 h-6"
+                        className="h-6 w-6"
                       />
-                      Facebook <ArrowTopRightOnSquareIcon className="w-6 h-6" />
+                      Facebook <ArrowTopRightOnSquareIcon className="h-6 w-6" />
                     </BrandLink>
                     <BrandLink
                       href="https://www.instagram.com/northwest.triathlonclub/"
@@ -150,10 +150,10 @@ export default function Training() {
                         alt="Instagram"
                         width={500}
                         height={500}
-                        className="w-6 h-6"
+                        className="h-6 w-6"
                       />
                       Instagram{" "}
-                      <ArrowTopRightOnSquareIcon className="w-6 h-6" />
+                      <ArrowTopRightOnSquareIcon className="h-6 w-6" />
                     </BrandLink>
                   </div>
                 </div>
@@ -170,22 +170,22 @@ export default function Training() {
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
-                  <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl rounded-xl border-b-2 border-white pb-3">
+                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
                     Club Events
                   </h1>
-                  <p className="border-t-2 border-brandGreen py-3 rounded-xl">
+                  <p className="rounded-xl border-t-2 border-brandGreen py-3">
                     Join us for regular club events, including time trials,
                     duathlons, and social rides. We offer these to all members
                     with a collection for locals charities at each event. Follow
                     us on social media for updates.
                   </p>
-                  <ul className="text-left flex flex-col gap-6">
-                    <li className="flex items-center gap-2 justify-around flex-wrap mb-6">
+                  <ul className="flex flex-col gap-6 text-left">
+                    <li className="mb-6 flex flex-wrap items-center justify-around gap-2">
                       <span className="flex gap-2">
-                        <MapPinIcon className="w-6 h-6 text-red-600" /> Various
+                        <MapPinIcon className="h-6 w-6 text-red-600" /> Various
                       </span>
                       <span className="flex gap-2">
-                        <ClockIcon className="w-6 h-6" /> Various
+                        <ClockIcon className="h-6 w-6" /> Various
                       </span>
                     </li>
                   </ul>
@@ -201,9 +201,9 @@ export default function Training() {
                         alt="Facebook"
                         width={2084}
                         height={2084}
-                        className="w-6 h-6"
+                        className="h-6 w-6"
                       />
-                      Facebook <ArrowTopRightOnSquareIcon className="w-6 h-6" />
+                      Facebook <ArrowTopRightOnSquareIcon className="h-6 w-6" />
                     </BrandLink>
                     <BrandLink
                       href="https://www.instagram.com/northwest.triathlonclub/"
@@ -216,10 +216,10 @@ export default function Training() {
                         alt="Instagram"
                         width={500}
                         height={500}
-                        className="w-6 h-6"
+                        className="h-6 w-6"
                       />
                       Instagram{" "}
-                      <ArrowTopRightOnSquareIcon className="w-6 h-6" />
+                      <ArrowTopRightOnSquareIcon className="h-6 w-6" />
                     </BrandLink>
                   </div>
                 </div>

@@ -35,7 +35,7 @@ const SwipeableCarousel: FC<SwipeableCarouselProps> = ({
   return (
     <>
       <div
-        className={`flex snap-x snap-mandatory overflow-x-scroll no-scrollbar relative ${className}`}
+        className={`no-scrollbar relative flex snap-x snap-mandatory overflow-x-scroll ${className}`}
         onScroll={(e) => {
           const el = e.target as HTMLDivElement;
           const index = Math.round(el.scrollLeft / el.clientWidth);
@@ -43,9 +43,9 @@ const SwipeableCarousel: FC<SwipeableCarouselProps> = ({
           setActiveIndex(index);
         }}
       >
-        <div className="inset-y-0 left-0 sticky z-50 flex items-center justify-center">
+        <div className="sticky inset-y-0 left-0 z-50 flex items-center justify-center">
           <button
-            className={clsx("text-white z-50", {
+            className={clsx("z-50 text-white", {
               "opacity-50": atLeftEdge,
               "cursor-default": atLeftEdge,
             })}
@@ -54,7 +54,7 @@ const SwipeableCarousel: FC<SwipeableCarouselProps> = ({
               setActiveIndex((prev) => (prev - 1 < 0 ? prev : prev - 1));
             }}
           >
-            <ChevronLeftIcon className="w-12 h-12" />
+            <ChevronLeftIcon className="h-12 w-12" />
           </button>
         </div>
         {React.Children.map(children, (child, index) => {
@@ -64,26 +64,26 @@ const SwipeableCarousel: FC<SwipeableCarouselProps> = ({
             return React.cloneElement(child, {
               className: clsx(
                 child.props.className,
-                "snap-start snap-always min-w-full h-full relative"
+                "snap-start snap-always min-w-full h-full relative",
               ),
               index: `${id}-${index}`,
             });
           }
           return child;
         })}
-        <div className="inset-y-0 right-0 sticky z-50 flex items-center justify-center">
+        <div className="sticky inset-y-0 right-0 z-50 flex items-center justify-center">
           <button
-            className={clsx("text-white z-50", {
+            className={clsx("z-50 text-white", {
               "opacity-50": atRightEdge,
             })}
             onClick={() => {
               setScrolling(false);
               setActiveIndex((prev) =>
-                prev + 1 >= children.length ? prev : prev + 1
+                prev + 1 >= children.length ? prev : prev + 1,
               );
             }}
           >
-            <ChevronRightIcon className="w-12 h-12" />
+            <ChevronRightIcon className="h-12 w-12" />
           </button>
         </div>
       </div>
@@ -92,7 +92,7 @@ const SwipeableCarousel: FC<SwipeableCarouselProps> = ({
           <span
             key={i}
             className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-              activeIndex === i ? "w-8 bg-white" : "w-4 hover:w-6 bg-white/50"
+              activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50 hover:w-6"
             }`}
             onClick={() => {
               setScrolling(false);

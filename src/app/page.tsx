@@ -7,7 +7,7 @@ import Juniors from "@/app/ui/panels/juniors";
 
 export default function Page() {
   return (
-    <div className="snap-y snap-mandatory overflow-y-scroll h-dvh no-scrollbar">
+    <div className="no-scrollbar h-dvh snap-y snap-mandatory overflow-y-scroll">
       <Home />
       <AboutUs />
       <Training />

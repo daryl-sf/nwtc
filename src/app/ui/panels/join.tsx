@@ -6,11 +6,11 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 export default function Join() {
   return (
-    <div className="snap-always snap-start" id="join">
-      <div className="relative min-h-dvh max-h-dvh flex bg-brandBlue pb-20">
-        <div className="container max-w-screen-xl mx-auto text-xl md:pt-4">
+    <div className="snap-start snap-always" id="join">
+      <div className="relative flex max-h-dvh min-h-dvh bg-brandBlue pb-20">
+        <div className="container mx-auto max-w-screen-xl text-xl md:pt-4">
           <SwipeableCarousel
-            className="md:rounded-xl md:h-[calc(100dvh-2rem)] h-dvh"
+            className="h-dvh md:h-[calc(100dvh-2rem)] md:rounded-xl"
             id="join"
           >
             <div>
@@ -24,10 +24,10 @@ export default function Join() {
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
-                  <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl rounded-xl border-b-2 border-white pb-3">
+                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
                     Become a member today
                   </h1>
-                  <p className="border-t-2 border-brandGreen py-3 rounded-xl">
+                  <p className="rounded-xl border-t-2 border-brandGreen py-3">
                     Join North West Triathlon Club today and become part of a
                     vibrant and supportive community of athletes. You can join
                     our club through the Triathlon Ireland website.
@@ -37,7 +37,7 @@ export default function Join() {
                     target="_blank"
                   >
                     <span>Visit Triathlon Ireland</span>
-                    <ArrowTopRightOnSquareIcon className="w-6 h-6" />
+                    <ArrowTopRightOnSquareIcon className="h-6 w-6" />
                   </BrandLink>
                 </div>
               </div>
@@ -53,15 +53,15 @@ export default function Join() {
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
-                  <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl rounded-xl border-b-2 border-white pb-3">
+                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
                     Join the conversation
                   </h1>
-                  <p className="border-t-2 border-brandGreen py-3 rounded-xl">
+                  <p className="rounded-xl border-t-2 border-brandGreen py-3">
                     Follow us on social media to stay up to date with the latest
                     club news, events, and training sessions. We are active on
                     Facebook, Instagram
                   </p>
-                  <ul className="flex justify-between sm:justify-center flex-wrap gap-4">
+                  <ul className="flex flex-wrap justify-between gap-4 sm:justify-center">
                     <li>
                       <BrandLink
                         href="https://www.facebook.com/north.westtriathlon/"
@@ -74,10 +74,10 @@ export default function Join() {
                           alt="Facebook"
                           width={2084}
                           height={2084}
-                          className="w-6 h-6"
+                          className="h-6 w-6"
                         />
                         Facebook{" "}
-                        <ArrowTopRightOnSquareIcon className="w-6 h-6" />
+                        <ArrowTopRightOnSquareIcon className="h-6 w-6" />
                       </BrandLink>
                     </li>
                     <li>
@@ -92,10 +92,10 @@ export default function Join() {
                           alt="Instagram"
                           width={500}
                           height={500}
-                          className="w-6 h-6"
+                          className="h-6 w-6"
                         />
                         @northwest.triathlonclub{" "}
-                        <ArrowTopRightOnSquareIcon className="w-6 h-6" />
+                        <ArrowTopRightOnSquareIcon className="h-6 w-6" />
                       </BrandLink>
                     </li>
                   </ul>

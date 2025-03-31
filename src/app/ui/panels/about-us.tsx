@@ -4,11 +4,11 @@ import SwipeableCarousel from "@/app/ui/SwipeableCarousel";
 
 export default function AboutUs() {
   return (
-    <div className="snap-always snap-start" id="about-us">
-      <div className="relative min-h-dvh max-h-dvh flex bg-brandBlue pb-20">
-        <div className="container max-w-screen-xl mx-auto text-xl md:pt-4">
+    <div className="snap-start snap-always" id="about-us">
+      <div className="relative flex max-h-dvh min-h-dvh bg-brandBlue pb-20">
+        <div className="container mx-auto max-w-screen-xl text-xl md:pt-4">
           <SwipeableCarousel
-            className="md:rounded-xl md:h-[calc(100dvh-2rem)] h-dvh"
+            className="h-dvh md:h-[calc(100dvh-2rem)] md:rounded-xl"
             id="about-us"
           >
             <div>
@@ -22,10 +22,10 @@ export default function AboutUs() {
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
-                  <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl rounded-xl border-b-2 border-white pb-3">
+                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
                     Our origins
                   </h1>
-                  <p className="border-t-2 border-brandGreen py-3 rounded-xl">
+                  <p className="rounded-xl border-t-2 border-brandGreen py-3">
                     Founded in 1983, North West Triathlon Club (NWTC) is one of
                     Ireland&apos;s longest-standing triathlon communities, based
                     in Derry, Northern Ireland.
@@ -50,10 +50,10 @@ export default function AboutUs() {
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
-                  <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl rounded-xl border-b-2 border-white pb-3">
+                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
                     What we offer
                   </h1>
-                  <p className="border-t-2 border-brandGreen py-3 rounded-xl">
+                  <p className="rounded-xl border-t-2 border-brandGreen py-3">
                     From complete beginners to seasoned triathletes, our members
                     benefit from expert coaching, structured training sessions,
                     and a vibrant social community.
@@ -78,10 +78,10 @@ export default function AboutUs() {
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
-                  <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl rounded-xl border-b-2 border-white pb-3">
+                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
                     By the community, for the community
                   </h1>
-                  <p className="border-t-2 border-brandGreen py-3 rounded-xl">
+                  <p className="rounded-xl border-t-2 border-brandGreen py-3">
                     NWTC is a volunteer-run club, with members contributing to
                     coaching, event planning, and club management.
                   </p>
@@ -105,11 +105,11 @@ export default function AboutUs() {
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
-                  <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl rounded-xl border-b-2 border-white pb-3">
+                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
                     Fully affiliated with Triathlon Ireland
                   </h1>
-                  <div className="border-t-2 border-brandGreen pt-3 rounded-xl">
-                    <div className="flex justify-around mb-3">
+                  <div className="rounded-xl border-t-2 border-brandGreen pt-3">
+                    <div className="mb-3 flex justify-around">
                       <Image
                         width={512}
                         height={332}
@@ -122,7 +122,7 @@ export default function AboutUs() {
                         alt="NWTC Logo"
                         width={536}
                         height={536}
-                        className="border-white border rounded-full hover:border-brandGreen h-28 w-auto"
+                        className="h-28 w-auto rounded-full border border-white hover:border-brandGreen"
                       />
                     </div>
                     <p>

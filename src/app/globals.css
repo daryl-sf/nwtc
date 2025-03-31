@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --background: #102F55;
+  --background: #102f55;
   --foreground: #ededed;
-  --brand-green: #7ED957;
-  --brand-blue: #102F55;
+  --brand-green: #7ed957;
+  --brand-blue: #102f55;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,10 +26,10 @@ body {
 
 @layer utilities {
   .no-scrollbar {
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
   }
   .no-scrollbar::-webkit-scrollbar {
-    display: none;  /* Safari and Chrome */
+    display: none; /* Safari and Chrome */
   }
 }

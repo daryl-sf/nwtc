@@ -1,5 +1,6 @@
 import Link from "next/link";
-import data from "./data.json";
+import data from "@/app/hall-of-fame/data.json";
+import AthleteCard from "@/app/ui/athlete-card";
 
 type Person = {
   name: string;
@@ -15,10 +16,10 @@ type Person = {
 const HallOfFame = () => {
   const typedData: Record<string, Person> = data;
   return (
-    <div className="flex flex-col space-y-4">
+    <div className="flex flex-wrap justify-center gap-4">
       {Object.entries(typedData).map(([slug, athlete]) => (
         <Link href={`/hall-of-fame/${slug}`} key={slug}>
-          {athlete.name}
+          <AthleteCard athlete={athlete} isLink />
         </Link>
       ))}
     </div>
