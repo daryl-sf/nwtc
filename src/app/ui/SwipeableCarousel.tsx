@@ -20,7 +20,7 @@ const SwipeableCarousel: FC<SwipeableCarouselProps> = ({
     if (scrolling) {
       return;
     }
-    console.log(id, activeIndex);
+
     const el = document.querySelector(`[index="${id}-${activeIndex}"]`);
     if (el) {
       el.scrollIntoView({

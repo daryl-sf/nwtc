@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import SwipeableCarousel from "@/app/ui/SwipeableCarousel";
+import Link from "next/link";
 
 export default function AboutUs() {
   return (
@@ -135,6 +136,38 @@ export default function AboutUs() {
                       a positive and inclusive training environment.
                     </p>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <Image
+                width={5071}
+                height={3379}
+                src={"/races/cyclists-racing.jpg"}
+                alt="Legs running"
+                className="h-full w-full object-cover"
+                priority
+              />
+              <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
+                <div className="w-3/4 text-center md:w-2/4">
+                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
+                    NWTC Hall of Fame
+                  </h1>
+                  <p className="rounded-xl border-t-2 border-brandGreen py-3">
+                    The NWTC Hall of Fame is a celebration of our members&apos;
+                    achievements, both on and off the course.
+                  </p>
+                  <p>
+                    We recognize the dedication, perseverance, and sportsmanship
+                    of our athletes, and we are proud to showcase their
+                    accomplishments.
+                  </p>
+                  <Link
+                    href="/hall-of-fame"
+                    className="hover:bg-brandGreen/80 mt-4 inline-block rounded-lg bg-brandGreen px-4 py-2 text-white"
+                  >
+                    View the Hall of Fame
+                  </Link>
                 </div>
               </div>
             </div>
