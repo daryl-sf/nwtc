@@ -147,7 +147,7 @@ export default async function HallOfFamePage() {
                         <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
                           {entry.name}
                         </h1>
-                        <div className="relative max-h-[60dvh] overflow-scroll text-ellipsis rounded-xl border-t-2 border-brandGreen px-3 py-3 text-justify">
+                        <div className="no-scrollbar relative max-h-[60dvh] overflow-scroll text-ellipsis rounded-xl border-t-2 border-brandGreen px-3 py-3 text-justify">
                           <ReactMarkdown>{entry.description}</ReactMarkdown>
                         </div>
                       </div>
