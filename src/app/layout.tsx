@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
 import "@/app/globals.css";
 import { geistMono, geistSans } from "@/app/ui/fonts";
+import { Amplify } from "aws-amplify";
+import outputs from "../../amplify_outputs.json";
 // import { BrandLink } from "@/app/ui/link";
 // import Image from "next/image";
 // import FloatingMenu from "@/app/ui/nav/floating";
+
+Amplify.configure(outputs);
 
 export const metadata: Metadata = {
   title: "Northwest Triathlon Club",
