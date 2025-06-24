@@ -11,7 +11,9 @@
     "format:check": "prettier --check ."
   },
   "dependencies": {
+    "@aws-amplify/ui-react": "^6.11.2",
     "@heroicons/react": "^2.2.0",
+    "aws-amplify": "^6.15.0",
     "clsx": "^2.1.1",
     "next": "15.2.4",
     "react": "^19.1.0",
@@ -20,10 +22,15 @@
     "react-type-animation": "^3.2.0"
   },
   "devDependencies": {
+    "@aws-amplify/backend": "^1.16.1",
+    "@aws-amplify/backend-cli": "^1.7.2",
     "@eslint/eslintrc": "^3",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "aws-cdk-lib": "^2.189.1",
+    "constructs": "^10.4.2",
+    "esbuild": "^0.25.5",
     "eslint": "^9",
     "eslint-config-next": "15.2.4",
     "eslint-config-prettier": "^10.1.1",
@@ -31,7 +38,8 @@
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
   },
   "prettier": {
     "plugins": [
