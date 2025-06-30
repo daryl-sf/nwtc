@@ -1,12 +1,10 @@
-"use client";
-import Image from "next/image";
 import { MapPinIcon } from "@heroicons/react/24/solid";
 import {
   ArrowTopRightOnSquareIcon,
   ClockIcon,
 } from "@heroicons/react/24/outline";
-import { BrandLink } from "@/app/ui/link";
-import SwipeableCarousel from "@/app/ui/SwipeableCarousel";
+import SwipeableCarousel from "./SwipableCarousel";
+import { BrandLink } from "./link";
 
 export default function Training() {
   return (
@@ -18,8 +16,7 @@ export default function Training() {
             id="training"
           >
             <div>
-              <Image
-                priority
+              <img
                 width={1500}
                 height={800}
                 src={"/training/pool-swimming.jpg"}
@@ -61,8 +58,7 @@ export default function Training() {
               </div>
             </div>
             <div>
-              <Image
-                priority
+              <img
                 src="/training/running.jpg"
                 alt="Athlete running on road"
                 width={1200}
@@ -95,8 +91,7 @@ export default function Training() {
               </div>
             </div>
             <div>
-              <Image
-                priority
+              <img
                 src="/training/open-water-swimming.jpg"
                 alt="Athlete swimming in open water"
                 width={1200}
@@ -125,11 +120,10 @@ export default function Training() {
                   </ul>
                   <div className="flex flex-wrap justify-around">
                     <BrandLink
-                      href="https://www.facebook.com/north.westtriathlon/"
+                      to="https://www.facebook.com/north.westtriathlon/"
                       target="_blank"
                     >
-                      <Image
-                        priority
+                      <img
                         aria-hidden
                         src="/social-media/Facebook_Logo_Primary.png"
                         alt="Facebook"
@@ -140,11 +134,10 @@ export default function Training() {
                       Facebook <ArrowTopRightOnSquareIcon className="h-6 w-6" />
                     </BrandLink>
                     <BrandLink
-                      href="https://www.instagram.com/northwest.triathlonclub/"
+                      to="https://www.instagram.com/northwest.triathlonclub/"
                       target="_blank"
                     >
-                      <Image
-                        priority
+                      <img
                         aria-hidden
                         src="/social-media/Instagram_Glyph_Gradient.png"
                         alt="Instagram"
@@ -160,8 +153,7 @@ export default function Training() {
               </div>
             </div>
             <div>
-              <Image
-                priority
+              <img
                 src="/training/cycling.jpg"
                 alt="Two female athletes cycling on road"
                 width={1200}
@@ -191,11 +183,10 @@ export default function Training() {
                   </ul>
                   <div className="flex flex-wrap justify-around">
                     <BrandLink
-                      href="https://www.facebook.com/north.westtriathlon/"
+                      to="https://www.facebook.com/north.westtriathlon/"
                       target="_blank"
                     >
-                      <Image
-                        priority
+                      <img
                         aria-hidden
                         src="/social-media/Facebook_Logo_Primary.png"
                         alt="Facebook"
@@ -206,11 +197,10 @@ export default function Training() {
                       Facebook <ArrowTopRightOnSquareIcon className="h-6 w-6" />
                     </BrandLink>
                     <BrandLink
-                      href="https://www.instagram.com/northwest.triathlonclub/"
+                      to="https://www.instagram.com/northwest.triathlonclub/"
                       target="_blank"
                     >
-                      <Image
-                        priority
+                      <img
                         aria-hidden
                         src="/social-media/Instagram_Glyph_Gradient.png"
                         alt="Instagram"

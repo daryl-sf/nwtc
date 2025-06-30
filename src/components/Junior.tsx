@@ -1,8 +1,6 @@
-"use client";
-import Image from "next/image";
-import SwipeableCarousel from "@/app/ui/SwipeableCarousel";
-import { BrandLink } from "@/app/ui/link";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
+import SwipeableCarousel from "./SwipableCarousel";
+import { BrandLink } from "./link";
 
 export default function Juniors() {
   return (
@@ -14,8 +12,7 @@ export default function Juniors() {
             id="juniors"
           >
             <div>
-              <Image
-                priority
+              <img
                 width={2000}
                 height={1333}
                 src={"/juniors/lukemccarron.jpg"}
@@ -38,8 +35,7 @@ export default function Juniors() {
               </div>
             </div>
             <div>
-              <Image
-                priority
+              <img
                 width={1500}
                 height={1125}
                 src={"/juniors/cyclists.jpg"}
@@ -61,8 +57,7 @@ export default function Juniors() {
               </div>
             </div>
             <div>
-              <Image
-                priority
+              <img
                 width={1660}
                 height={1106}
                 src={"/juniors/swim-line-up.jpg"}
@@ -86,8 +81,7 @@ export default function Juniors() {
               </div>
             </div>
             <div>
-              <Image
-                priority
+              <img
                 width={2000}
                 height={1436}
                 src={"/juniors/runners.jpg"}
@@ -111,8 +105,7 @@ export default function Juniors() {
               </div>
             </div>
             <div>
-              <Image
-                priority
+              <img
                 width={2000}
                 height={1333}
                 src={"/juniors/bike-on-ground.jpg"}
@@ -126,16 +119,14 @@ export default function Juniors() {
                   </h1>
                   <div className="rounded-xl border-t-2 border-brandGreen pt-3">
                     <div className="mb-3 flex justify-around">
-                      <Image
-                        priority
+                      <img
                         width={512}
                         height={332}
                         alt="Triathlon Ireland logo"
                         src="/juniors/triathlon-ireland-logo.png"
                         className="h-28 w-auto"
                       />
-                      <Image
-                        priority
+                      <img
                         src="/nwtc-logo.PNG"
                         alt="NWTC Logo"
                         width={536}
@@ -155,8 +146,7 @@ export default function Juniors() {
               </div>
             </div>
             <div>
-              <Image
-                priority
+              <img
                 width={2000}
                 height={1122}
                 src={"/juniors/cyclist.jpg"}
@@ -176,11 +166,10 @@ export default function Juniors() {
                   <p>Join us</p>
                   <div className="flex flex-wrap justify-around">
                     <BrandLink
-                      href="https://www.facebook.com/north.westtriathlon/"
+                      to="https://www.facebook.com/north.westtriathlon/"
                       target="_blank"
                     >
-                      <Image
-                        priority
+                      <img
                         aria-hidden
                         src="/social-media/Facebook_Logo_Primary.png"
                         alt="Facebook"
@@ -191,11 +180,10 @@ export default function Juniors() {
                       Facebook <ArrowTopRightOnSquareIcon className="h-6 w-6" />
                     </BrandLink>
                     <BrandLink
-                      href="https://www.instagram.com/northwest.triathlonclub/"
+                      to="https://www.instagram.com/northwest.triathlonclub/"
                       target="_blank"
                     >
-                      <Image
-                        priority
+                      <img
                         aria-hidden
                         src="/social-media/Instagram_Glyph_Gradient.png"
                         alt="Instagram"

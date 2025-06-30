@@ -1,7 +1,5 @@
-"use client";
-import Image from "next/image";
-import SwipeableCarousel from "@/app/ui/SwipeableCarousel";
-import Link from "next/link";
+import { Link } from "react-router-dom";
+import SwipeableCarousel from "./SwipableCarousel";
 
 export default function AboutUs() {
   return (
@@ -13,13 +11,12 @@ export default function AboutUs() {
             id="about-us"
           >
             <div>
-              <Image
+              <img
                 width={1440}
                 height={810}
                 src={"/about-us/reid.jpg"}
                 alt="Aileen Reid crossing finish line"
                 className="h-full w-full object-cover"
-                priority
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
@@ -41,13 +38,12 @@ export default function AboutUs() {
               </div>
             </div>
             <div>
-              <Image
+              <img
                 width={2000}
                 height={1335}
                 src={"/about-us/swimmers.jpg"}
                 alt="Swimmers swomming in pool"
                 className="h-full w-full object-cover"
-                priority
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
@@ -69,13 +65,12 @@ export default function AboutUs() {
               </div>
             </div>
             <div>
-              <Image
+              <img
                 width={5071}
                 height={3379}
                 src={"/about-us/running-legs.jpg"}
                 alt="Legs running"
                 className="h-full w-full object-cover"
-                priority
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
@@ -96,13 +91,12 @@ export default function AboutUs() {
               </div>
             </div>
             <div>
-              <Image
+              <img
                 width={2000}
                 height={1333}
                 src={"/juniors/bike-on-ground.jpg"}
                 alt="Bike on the ground at side of road"
                 className="h-full w-full object-cover"
-                priority
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
@@ -111,14 +105,14 @@ export default function AboutUs() {
                   </h1>
                   <div className="rounded-xl border-t-2 border-brandGreen pt-3">
                     <div className="mb-3 flex justify-around">
-                      <Image
+                      <img
                         width={512}
                         height={332}
                         alt="Triathlon Ireland logo"
                         src="/juniors/triathlon-ireland-logo.png"
                         className="h-28 w-auto"
                       />
-                      <Image
+                      <img
                         src="/nwtc-logo.PNG"
                         alt="NWTC Logo"
                         width={536}
@@ -140,13 +134,12 @@ export default function AboutUs() {
               </div>
             </div>
             <div>
-              <Image
+              <img
                 width={5071}
                 height={3379}
                 src={"/races/cyclists-racing.jpg"}
                 alt="Legs running"
                 className="h-full w-full object-cover"
-                priority
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
@@ -163,7 +156,7 @@ export default function AboutUs() {
                     accomplishments.
                   </p>
                   <Link
-                    href="/hall-of-fame"
+                    to="/hall-of-fame"
                     className="hover:bg-brandGreen/80 mt-4 inline-block rounded-lg bg-brandGreen px-4 py-2 text-white"
                   >
                     View the Hall of Fame

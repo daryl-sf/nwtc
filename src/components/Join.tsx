@@ -1,8 +1,6 @@
-"use client";
-import SwipeableCarousel from "@/app/ui/SwipeableCarousel";
-import Image from "next/image";
-import { BrandLink } from "@/app/ui/link";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
+import SwipeableCarousel from "./SwipableCarousel";
+import { BrandLink } from "./link";
 
 export default function Join() {
   return (
@@ -14,8 +12,7 @@ export default function Join() {
             id="join"
           >
             <div>
-              <Image
-                priority
+              <img
                 width={2000}
                 height={1324}
                 src={"/join/runners-on-bridge.jpg"}
@@ -33,7 +30,7 @@ export default function Join() {
                     our club through the Triathlon Ireland website.
                   </p>
                   <BrandLink
-                    href="https://www.triathlonireland.com/"
+                    to="https://www.triathlonireland.com/"
                     target="_blank"
                   >
                     <span>Visit Triathlon Ireland</span>
@@ -43,8 +40,7 @@ export default function Join() {
               </div>
             </div>
             <div>
-              <Image
-                priority
+              <img
                 width={2000}
                 height={1333}
                 src={"/join/swimmer-open-water.jpg"}
@@ -64,11 +60,10 @@ export default function Join() {
                   <ul className="flex flex-wrap justify-between gap-4 sm:justify-center">
                     <li>
                       <BrandLink
-                        href="https://www.facebook.com/north.westtriathlon/"
+                        to="https://www.facebook.com/north.westtriathlon/"
                         target="_blank"
                       >
-                        <Image
-                          priority
+                        <img
                           aria-hidden
                           src="/social-media/Facebook_Logo_Primary.png"
                           alt="Facebook"
@@ -82,11 +77,10 @@ export default function Join() {
                     </li>
                     <li>
                       <BrandLink
-                        href="https://www.instagram.com/northwest.triathlonclub/"
+                        to="https://www.instagram.com/northwest.triathlonclub/"
                         target="_blank"
                       >
-                        <Image
-                          priority
+                        <img
                           aria-hidden
                           src="/social-media/Instagram_Glyph_Gradient.png"
                           alt="Instagram"
