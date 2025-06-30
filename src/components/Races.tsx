@@ -1,7 +1,4 @@
-"use client";
-import SwipeableCarousel from "@/app/ui/SwipeableCarousel";
-import Image from "next/image";
-// import Link from "next/link";
+import SwipeableCarousel from "./SwipableCarousel";
 
 export default function Races() {
   return (
@@ -13,8 +10,7 @@ export default function Races() {
             id="races"
           >
             <div>
-              <Image
-                priority
+              <img
                 width={1500}
                 height={999}
                 src={"/races/liamball.jpg"}
@@ -45,8 +41,7 @@ export default function Races() {
               </div>
             </div>
             <div>
-              <Image
-                priority
+              <img
                 width={2000}
                 height={1333}
                 src={"/races/cyclists-racing.jpg"}
@@ -66,7 +61,7 @@ export default function Races() {
                     seasoned athletes alike.
                   </p>
                   {/* <Link
-                    href="/races/liam-ball-triathlon"
+                    to="/races/liam-ball-triathlon"
                     className="text-brandGreen font-bold hover:underline"
                   >
                     Read more

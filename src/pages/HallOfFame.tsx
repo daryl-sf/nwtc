@@ -1,6 +1,5 @@
-import Image from "next/image";
 import ReactMarkdown from "react-markdown";
-import SwipeableCarousel from "../ui/SwipeableCarousel";
+import SwipeableCarousel from "../components/SwipableCarousel";
 
 type Entry = {
   sk: string;
@@ -113,7 +112,7 @@ const entries: Entry[] = [
   // },
 ];
 
-export default async function HallOfFamePage() {
+export default function HallOfFamePage() {
   return (
     <main className="no-scrollbar h-dvh snap-y snap-mandatory overflow-y-scroll">
       <div className="snap-start snap-always" id="hall-of-fame">
@@ -126,7 +125,7 @@ export default async function HallOfFamePage() {
               {entries.map((entry) => {
                 return (
                   <div key={entry.sk}>
-                    <Image
+                    <img
                       src={entry.image.src}
                       width={entry.image.width}
                       height={entry.image.height}
@@ -136,7 +135,7 @@ export default async function HallOfFamePage() {
                     <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                       <div className="w-3/4 text-center md:w-2/4">
                         <div className="mb-4 flex items-center justify-center">
-                          <Image
+                          <img
                             src={entry.profileImage.src}
                             width={entry.profileImage.width}
                             height={entry.profileImage.height}

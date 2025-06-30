@@ -3,18 +3,15 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm ci --cache .npm --prefer-offline
+        - npm ci
     build:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: .next
+    baseDirectory: dist
     files:
       - "**/*"
   cache:
     paths:
-      - .next/cache/**/*
       - .npm/**/*
-  environment:
-    variables:
-      NEXT_PUBLIC_TEST_VAR: "test"
+      - node_modules/**/*

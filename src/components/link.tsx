@@ -1,5 +1,5 @@
-import Link, { LinkProps } from "next/link";
-import { FC, ReactNode, AnchorHTMLAttributes } from "react";
+import type { FC, ReactNode, AnchorHTMLAttributes } from "react";
+import { Link, type LinkProps } from "react-router-dom";
 
 interface BrandLinkProps extends LinkProps {
   children: ReactNode;
@@ -10,22 +10,15 @@ interface BrandLinkProps extends LinkProps {
 
 export const BrandLink: FC<
   BrandLinkProps & AnchorHTMLAttributes<HTMLAnchorElement>
-> = ({
-  children,
-  external = false,
-  href,
-  className = "",
-  target,
-  ...props
-}) => {
+> = ({ children, external = false, to, className = "", target, ...props }) => {
   const combinedClassName =
     "flex items-center gap-2 hover:underline hover:underline-offset-4 decoration-brandGreen " +
     className;
 
-  if (external || href?.toString().startsWith("http")) {
+  if (external || to?.toString().startsWith("http")) {
     return (
       <a
-        href={href as string}
+        href={to as string}
         className={combinedClassName}
         target={target}
         rel={target === "_blank" ? "noopener noreferrer" : undefined}
@@ -37,7 +30,7 @@ export const BrandLink: FC<
   }
 
   return (
-    <Link href={href} className={combinedClassName} {...props}>
+    <Link to={to} className={combinedClassName} {...props}>
       {children}
     </Link>
   );
