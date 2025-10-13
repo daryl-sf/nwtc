@@ -1,4 +1,7 @@
-import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
+import {
+  ArrowDownTrayIcon,
+  ArrowTopRightOnSquareIcon,
+} from "@heroicons/react/24/outline";
 import SwipeableCarousel from "./SwipableCarousel";
 import { BrandLink } from "./link";
 
@@ -193,6 +196,37 @@ export default function Juniors() {
                       />
                       Instagram{" "}
                       <ArrowTopRightOnSquareIcon className="h-6 w-6" />
+                    </BrandLink>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
+                <div className="w-3/4 text-center md:w-2/4">
+                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
+                    Safeguarding
+                  </h1>
+                  <p className="rounded-xl border-t-2 border-brandGreen py-3">
+                    At NWTC, we are committed to creating a safe and positive
+                    environment for all members, especially children and young
+                    people. Every athlete has the right to enjoy sport free from
+                    harm, abuse or neglect.
+                  </p>
+                  <p>
+                    If you are concerned about the welfare or protection of a
+                    child, or if you are a young person who needs to talk to
+                    someone, please rech out. We all have a role to play in
+                    keeping our community safe.
+                  </p>
+                  <div className="flex flex-wrap justify-around pt-3">
+                    <BrandLink
+                      to="/Safeguarding-Poster-NI-2025.pdf"
+                      target="_blank"
+                      external
+                    >
+                      <ArrowDownTrayIcon className="h-6 w-6" /> View our
+                      Safeguarding Poster 2025
                     </BrandLink>
                   </div>
                 </div>

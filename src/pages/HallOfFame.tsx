@@ -5,7 +5,7 @@ type Entry = {
   sk: string;
   name: string;
   description: string;
-  image: {
+  image?: {
     src: string;
     alt: string;
     height: number;
@@ -92,24 +92,25 @@ const entries: Entry[] = [
       width: 544,
     },
   },
-  // {
-  //   sk: "5",
-  //   name: "Joe McConnellogue",
-  //   description:
-  //     "Joe McConnellogue&apos;s story is the epitome of resilience, determination, and relentless pursuit of excellence. A veteran of four open-heart surgeries, Joe&apos;s journey has been a test of survival, mental fortitude, and his unyielding love for triathlon. His first surgery at 27 could have ended his competitive career, but instead, Joe approached it like the race of his life—a race he would never stop running. The challenges didn&apos;t stop there, as his fourth and most recent surgery at age 46 further tested his strength, but only solidified his resolve to continue his triathlon journey.\n\n&nbsp;\n\nOver the years, Joe&apos;s heart has become both his strength and his limiter—a line he cannot cross. But rather than letting this restriction define him, Joe has embraced it, developing a deep understanding of his body&apos;s capabilities. Every training session is a calculated risk, yet Joe has consistently exceeded expectations. His ability to train and race within his heart's limits, while pushing the boundaries of his performance, makes him one of the most unique and respected athletes in the triathlon world.\n\n&nbsp;\n\nJoe&apos;s entry into triathlon came after a career in football, where he realised his passion was elsewhere. In 2011, he completed his first triathlon in Limavady at the Roe Valley Sprint Triathlon. He crossed the line in a very respectable 1hr 11minutes, with his brother Paul helping him maintain a controlled heart rate. By 2021, Joe had completed a Half Ironman in 4:58—achieving his goal of going sub-5 hours despite the challenges posed by his medical history. This remarkable progression is a testament to Joe&apos;s dedication, focus, and resilience, as he has consistently improved while managing his heart condition.\n\n&nbsp;\n\nWhat sets Joe apart from many athletes is his ongoing commitment to training and racing well into his 50s. In 2025, Joe is still racing, still planning his race season, and still showing up to every club training session and practice race with the same passion as when he started. Last year, while staying in his mobile home in Donegal, Joe took part in a local sea swim race series, the Portnablagh Crab Crawl, placing overall second. This result wasn&apos;t a fluke, the same as achieving Age Group wins in practically every race he enters, not to mention going sub 60 minutes for a 25-mile time trial. It is the culmination of years of hard work and an in-depth understanding of his body&apos;s abilities.\n\n&nbsp;\n\nWhen reviewing Joe&apos;s race splits, his biking times are nothing short of legendary. For most athletes, these times would represent an all-out effort, their heart rates nearing the red line. Yet Joe, bound by the limitations of his heart, rides with ease, practically singing a tune on his bike. His ability to maintain such a high level of effort while staying within his limits is extraordinary. Joe&apos;s cycling prowess is so impressive that young athletes often draft off him, struggling to take their turn or even keep up. He has been known to pull his training teammates through tough sessions, showing his selfless nature and commitment to the success of others.\n\n&nbsp;\n\nJoe McConnellogue is a storyteller—and a master at it. We&apos;re not saying he spins tales, but during long bike rides and training sessions, you&apos;re never short of entertainment. Joe has a way of bringing stories to life like no one else. Sure, some of the details might evolve over time, but the core always stays true. There&apos;s always something new in every retelling—maybe a little twist, or a fresh detail that keeps the crowd hooked. A true legend, and that&apos;s exactly how we like it.\n\n&nbsp;\n\nOutside of triathlon, Joe is a big family man. Married to Oonagh, and the proud father of Jayne, Holly, and Joe, he&apos;s always put his family first. As the youngest of 13 siblings, Joe&apos;s childhood was nothing short of a survival of the fittest—literally. You had to be the first up to even get a pair of shoes to wear to school! It&apos;s that sense of determination, grit, and family-first mentality that has shaped him into the athlete and person we admire today.\n\n&nbsp;\n\nJoe&apos;s heart condition has shaped his approach to life and sport, but it has never been a barrier. Through all the challenges—whether medical or athletic—Joe has remained a pillar in the triathlon community. His journey from football to triathlon, from heart surgeries to race victories, is a story of unwavering perseverance, skill, and an unrelenting love for the sport.\n\n&nbsp;\n\nJoe McConnellogue is more than an athlete; he is a living example of what it means to defy the odds and continuously strive for greatness. He has proven time and again that heart conditions, age, and limitations are mere obstacles to be overcome with determination, the right mindset, and a love for life. Joe&apos;s legacy, both literally and figuratively, is one of heart—an inspiration to us all.\n\n&nbsp;\n\nIt is with immense pride that we induct Joe McConnellogue into the NWTC Hall of Fame. A true champion, a dedicated racer, and a legend in every sense of the word.",
-  //   image: {
-  //     src: "/hof/joemcconnellogue.jpg",
-  //     alt: "Joe McConnellogue hall of famer",
-  //     height: 1080,
-  //     width: 1080,
-  //   },
-  //   profileImage: {
-  //     src: "/hof/joemcconnellogue.jpg",
-  //     alt: "Joe McConnellogue hall of famer",
-  //     height: 1080,
-  //     width: 1080,
-  //   },
-  // },
+  {
+    sk: "5",
+    name: "Joe McConnellogue",
+    description:
+      "Joe McConnellogue&apos;s story is the epitome of resilience, determination, and relentless pursuit of excellence. A veteran of four open-heart surgeries, Joe&apos;s journey has been a test of survival, mental fortitude, and his unyielding love for triathlon. His first surgery at 27 could have ended his competitive career, but instead, Joe approached it like the race of his life—a race he would never stop running. The challenges didn&apos;t stop there, as his fourth and most recent surgery at age 46 further tested his strength, but only solidified his resolve to continue his triathlon journey.\n\n&nbsp;\n\nOver the years, Joe&apos;s heart has become both his strength and his limiter—a line he cannot cross. But rather than letting this restriction define him, Joe has embraced it, developing a deep understanding of his body&apos;s capabilities. Every training session is a calculated risk, yet Joe has consistently exceeded expectations. His ability to train and race within his heart's limits, while pushing the boundaries of his performance, makes him one of the most unique and respected athletes in the triathlon world.\n\n&nbsp;\n\nJoe&apos;s entry into triathlon came after a career in football, where he realised his passion was elsewhere. In 2011, he completed his first triathlon in Limavady at the Roe Valley Sprint Triathlon. He crossed the line in a very respectable 1hr 11minutes, with his brother Paul helping him maintain a controlled heart rate. By 2021, Joe had completed a Half Ironman in 4:58—achieving his goal of going sub-5 hours despite the challenges posed by his medical history. This remarkable progression is a testament to Joe&apos;s dedication, focus, and resilience, as he has consistently improved while managing his heart condition.\n\n&nbsp;\n\nWhat sets Joe apart from many athletes is his ongoing commitment to training and racing well into his 50s. In 2025, Joe is still racing, still planning his race season, and still showing up to every club training session and practice race with the same passion as when he started. Last year, while staying in his mobile home in Donegal, Joe took part in a local sea swim race series, the Portnablagh Crab Crawl, placing overall second. This result wasn&apos;t a fluke, the same as achieving Age Group wins in practically every race he enters, not to mention going sub 60 minutes for a 25-mile time trial. It is the culmination of years of hard work and an in-depth understanding of his body&apos;s abilities.\n\n&nbsp;\n\nWhen reviewing Joe&apos;s race splits, his biking times are nothing short of legendary. For most athletes, these times would represent an all-out effort, their heart rates nearing the red line. Yet Joe, bound by the limitations of his heart, rides with ease, practically singing a tune on his bike. His ability to maintain such a high level of effort while staying within his limits is extraordinary. Joe&apos;s cycling prowess is so impressive that young athletes often draft off him, struggling to take their turn or even keep up. He has been known to pull his training teammates through tough sessions, showing his selfless nature and commitment to the success of others.\n\n&nbsp;\n\nJoe McConnellogue is a storyteller—and a master at it. We&apos;re not saying he spins tales, but during long bike rides and training sessions, you&apos;re never short of entertainment. Joe has a way of bringing stories to life like no one else. Sure, some of the details might evolve over time, but the core always stays true. There&apos;s always something new in every retelling—maybe a little twist, or a fresh detail that keeps the crowd hooked. A true legend, and that&apos;s exactly how we like it.\n\n&nbsp;\n\nOutside of triathlon, Joe is a big family man. Married to Oonagh, and the proud father of Jayne, Holly, and Joe, he&apos;s always put his family first. As the youngest of 13 siblings, Joe&apos;s childhood was nothing short of a survival of the fittest—literally. You had to be the first up to even get a pair of shoes to wear to school! It&apos;s that sense of determination, grit, and family-first mentality that has shaped him into the athlete and person we admire today.\n\n&nbsp;\n\nJoe&apos;s heart condition has shaped his approach to life and sport, but it has never been a barrier. Through all the challenges—whether medical or athletic—Joe has remained a pillar in the triathlon community. His journey from football to triathlon, from heart surgeries to race victories, is a story of unwavering perseverance, skill, and an unrelenting love for the sport.\n\n&nbsp;\n\nJoe McConnellogue is more than an athlete; he is a living example of what it means to defy the odds and continuously strive for greatness. He has proven time and again that heart conditions, age, and limitations are mere obstacles to be overcome with determination, the right mindset, and a love for life. Joe&apos;s legacy, both literally and figuratively, is one of heart—an inspiration to us all.\n\n&nbsp;\n\nIt is with immense pride that we induct Joe McConnellogue into the NWTC Hall of Fame. A true champion, a dedicated racer, and a legend in every sense of the word.",
+    // image: {
+    //   src: "/hof/joemcconnellogue.jpg",
+    //   alt: "Joe McConnellogue hall of famer",
+    //   height: 1080,
+    //   width: 1080,
+    // },
+    profileImage: {
+      // src: "/hof/joemcconnellogue.jpg",
+      src: "/nwtc-logo.PNG",
+      alt: "Joe McConnellogue hall of famer",
+      height: 1080,
+      width: 1080,
+    },
+  },
 ];
 
 export default function HallOfFamePage() {
@@ -125,13 +126,15 @@ export default function HallOfFamePage() {
               {entries.map((entry) => {
                 return (
                   <div key={entry.sk}>
-                    <img
-                      src={entry.image.src}
-                      width={entry.image.width}
-                      height={entry.image.height}
-                      alt={`${entry.name} hall of famer`}
-                      className="h-full w-full object-cover"
-                    />
+                    {entry.image ? (
+                      <img
+                        src={entry.image.src}
+                        width={entry.image.width}
+                        height={entry.image.height}
+                        alt={`${entry.name} hall of famer`}
+                        className="h-full w-full object-cover"
+                      />
+                    ) : null}
                     <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                       <div className="w-3/4 text-center md:w-2/4">
                         <div className="mb-4 flex items-center justify-center">
