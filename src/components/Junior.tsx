@@ -201,7 +201,7 @@ export default function Juniors() {
                 </div>
               </div>
             </div>
-            <div>
+            <div id="safeguarding">
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
                   <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">

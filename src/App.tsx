@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import HallOfFame from "./pages/HallOfFame";
+import Safeguarding from "./pages/Safeguarding";
 // import { Authenticator } from "@aws-amplify/ui-react";
 // import LogIn from "./pages/LogIn";
 // import { geistMono, geistSans } from "./assets/fonts";
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "/hall-of-fame",
     element: <HallOfFame />,
+  },
+  {
+    path: "/safeguarding",
+    element: <Safeguarding />,
   },
   // {
   //   path: "/login",
