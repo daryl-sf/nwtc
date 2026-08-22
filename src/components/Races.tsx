@@ -1,4 +1,5 @@
 import SwipeableCarousel from "./SwipableCarousel";
+import { raceList } from "../content/races";
 
 export default function Races() {
   return (
@@ -9,66 +10,28 @@ export default function Races() {
             className="h-dvh md:h-[calc(100dvh-2rem)] md:rounded-xl"
             id="races"
           >
-            <div>
-              <img
-                width={1500}
-                height={999}
-                src={"/races/liamball.jpg"}
-                alt="Liam Ball mural"
-                className="h-full w-full object-cover"
-              />
-              <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
-                <div className="w-3/4 text-center md:w-2/4">
-                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
-                    Liam Ball Sprint Triathlon
-                  </h1>
-                  <p className="rounded-xl border-t-2 border-brandGreen pt-3">
-                    Liam Ball, a proud Derry swimmer, represented Ireland at the
-                    1968 & 1972 Olympics. A remarkable athlete, he left a
-                    lasting legacy despite his untimely death in 1984 at 33. To
-                    honour his memory, NWTC named their annual sprint triathlon
-                    after him. Year after year the event continues to grow,
-                    keeping his story alive and inspiring the next generation of
-                    athletes.
-                  </p>
-                  {/* <Link
-                    href="/races/buncrana-duathlon"
-                    className="text-brandGreen font-bold hover:underline"
-                  >
-                    Read more
-                  </Link> */}
+            {raceList.map((race) => (
+              <div key={race.slug}>
+                <img
+                  width={race.image.width}
+                  height={race.image.height}
+                  src={race.image.src}
+                  alt={race.image.alt}
+                  className="h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
+                  <div className="w-3/4 text-center md:w-2/4">
+                    <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
+                      {race.title}
+                    </h1>
+                    <p className="rounded-xl border-t-2 border-brandGreen pt-3">
+                      {race.paragraphs[0]} {race.paragraphs[1]}
+                    </p>
+                    <p className="pt-3">{race.paragraphs[2]}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <img
-                width={2000}
-                height={1333}
-                src={"/races/cyclists-racing.jpg"}
-                alt="Triathletes racing"
-                className="h-full w-full object-cover"
-              />
-              <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
-                <div className="w-3/4 text-center md:w-2/4">
-                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
-                    Buncrana Duathlon
-                  </h1>
-                  <p className="rounded-xl border-t-2 border-brandGreen pt-3">
-                    The Buncrana Duathlon is a great way to start the season.
-                    Taking place in the beautiful town of Buncrana, the duathlon
-                    consists of a 3.2km run, 16km bike and a 3.2km run. The
-                    course is flat and fast and is perfect for beginners and
-                    seasoned athletes alike.
-                  </p>
-                  {/* <Link
-                    to="/races/liam-ball-triathlon"
-                    className="text-brandGreen font-bold hover:underline"
-                  >
-                    Read more
-                  </Link> */}
-                </div>
-              </div>
-            </div>
+            ))}
           </SwipeableCarousel>
         </div>
       </div>

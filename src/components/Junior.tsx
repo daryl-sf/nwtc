@@ -4,6 +4,9 @@ import {
 } from "@heroicons/react/24/outline";
 import SwipeableCarousel from "./SwipableCarousel";
 import { BrandLink } from "./link";
+import { juniorSlides } from "../content/juniors";
+import { safeguardingPage } from "../content/safeguarding";
+import { social } from "../content/links";
 
 export default function Juniors() {
   return (
@@ -14,219 +17,98 @@ export default function Juniors() {
             className="h-dvh md:h-[calc(100dvh-2rem)] md:rounded-xl"
             id="juniors"
           >
-            <div>
-              <img
-                width={2000}
-                height={1333}
-                src={"/juniors/lukemccarron.jpg"}
-                alt="Luke McCarron on a bike"
-                className="h-full w-full object-cover"
-              />
-              <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
-                <div className="w-3/4 text-center md:w-2/4">
-                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
-                    Junior Section
-                  </h1>
-                  <p className="rounded-xl border-t-2 border-brandGreen pt-3">
-                    At NWTC, we are passionate about developing young athletes
-                    in a fun, supportive, and safe environment. Our junior
-                    section provides structured coaching for aspiring
-                    traiathletes, focusing on skill development, fitness, and a
-                    love for the sport.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <img
-                width={1500}
-                height={1125}
-                src={"/juniors/cyclists.jpg"}
-                alt="Traithletes racing on bikes"
-                className="h-full w-full object-cover"
-              />
-              <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
-                <div className="w-3/4 text-center md:w-2/4">
-                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
-                    Open to all committed young athletes
-                  </h1>
-                  <p className="rounded-xl border-t-2 border-brandGreen pt-3">
-                    Age is not a limiting factor at NWTC. If your child
-                    canconfidently swim 100m (4 lengths of a 25m pool) in under
-                    two minutes and do so safely, we can work with them - as
-                    long as the have the desire to become a triathlete.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <img
-                width={1660}
-                height={1106}
-                src={"/juniors/swim-line-up.jpg"}
-                alt="Traithletes lining up to swim"
-                className="h-full w-full object-cover"
-              />
-              <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
-                <div className="w-3/4 text-center md:w-2/4">
-                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
-                    A proven pathway to success
-                  </h1>
-                  <p className="rounded-xl border-t-2 border-brandGreen pt-3">
-                    Our junior club has a strong track record of developing
-                    top-quality atheletes. Over the years, we have proudly seen
-                    four of our juniors progress to represent Ireland at various
-                    international events. At NWTC, we provide the coaching,
-                    guidance, and opportunities to help young athletes reach
-                    their full potential.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <img
-                width={2000}
-                height={1436}
-                src={"/juniors/runners.jpg"}
-                alt="Traithletes running"
-                className="h-full w-full object-cover"
-              />
-              <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
-                <div className="w-3/4 text-center md:w-2/4">
-                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
-                    Keeping costs low
-                  </h1>
-                  <p className="rounded-xl border-t-2 border-brandGreen pt-3">
-                    At NWTC, we believe in making triathlon as accessbile as
-                    apossible. We susidise junior training costs through our
-                    senior club to ensure that young atheltes have the best
-                    opportunity to develop. Fees are calculated per training
-                    block, but as a reference, in 2024, the cost per session was
-                    around £3.50.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <img
-                width={2000}
-                height={1333}
-                src={"/juniors/bike-on-ground.jpg"}
-                alt="Bike on the ground at side of road"
-                className="h-full w-full object-cover"
-              />
-              <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
-                <div className="w-3/4 text-center md:w-2/4">
-                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
-                    Fully affiliated with Triathlon Ireland
-                  </h1>
-                  <div className="rounded-xl border-t-2 border-brandGreen pt-3">
-                    <div className="mb-3 flex justify-around">
-                      <img
-                        width={512}
-                        height={332}
-                        alt="Triathlon Ireland logo"
-                        src="/juniors/triathlon-ireland-logo.png"
-                        className="h-28 w-auto"
-                      />
-                      <img
-                        src="/nwtc-logo.PNG"
-                        alt="NWTC Logo"
-                        width={536}
-                        height={536}
-                        className="h-28 w-auto rounded-full border border-white hover:border-brandGreen"
-                      />
-                    </div>
-                    <p>
-                      NWTC is fully aligened with Triathlon Ireland, ensuring
-                      that our coaching, safeguarding, and safety practices meet
-                      the highest standards. Our dedicated, qualified coaches
-                      are committed to creating a positive and inclusive
-                      training environment.
-                    </p>
+            {juniorSlides.map((slide) => (
+              <div key={slide.id}>
+                <img
+                  width={slide.image.width}
+                  height={slide.image.height}
+                  src={slide.image.src}
+                  alt={slide.image.alt}
+                  className="h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
+                  <div className="w-3/4 text-center md:w-2/4">
+                    <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
+                      {slide.title}
+                    </h1>
+                    {"showLogos" in slide && slide.showLogos ? (
+                      <div className="rounded-xl border-t-2 border-brandGreen pt-3">
+                        <div className="mb-3 flex justify-around">
+                          <img
+                            width={512}
+                            height={332}
+                            alt="Triathlon Ireland logo"
+                            src="/juniors/triathlon-ireland-logo.png"
+                            className="h-28 w-auto"
+                          />
+                          <img
+                            src="/nwtc-logo.PNG"
+                            alt="NWTC Logo"
+                            width={536}
+                            height={536}
+                            className="h-28 w-auto rounded-full border border-white hover:border-brandGreen"
+                          />
+                        </div>
+                        <p>{slide.paragraphs[0]}</p>
+                      </div>
+                    ) : (
+                      <p className="rounded-xl border-t-2 border-brandGreen pt-3">
+                        {slide.paragraphs[0]}
+                      </p>
+                    )}
+                    {"joinCta" in slide && slide.joinCta ? (
+                      <>
+                        <p>Join us</p>
+                        <div className="flex flex-wrap justify-around">
+                          <BrandLink to={social.facebook} target="_blank">
+                            <img
+                              aria-hidden
+                              src="/social-media/Facebook_Logo_Primary.png"
+                              alt="Facebook"
+                              width={2084}
+                              height={2084}
+                              className="h-6 w-6"
+                            />
+                            Facebook{" "}
+                            <ArrowTopRightOnSquareIcon className="h-6 w-6" />
+                          </BrandLink>
+                          <BrandLink to={social.instagram} target="_blank">
+                            <img
+                              aria-hidden
+                              src="/social-media/Instagram_Glyph_Gradient.png"
+                              alt="Instagram"
+                              width={500}
+                              height={500}
+                              className="h-6 w-6"
+                            />
+                            Instagram{" "}
+                            <ArrowTopRightOnSquareIcon className="h-6 w-6" />
+                          </BrandLink>
+                        </div>
+                      </>
+                    ) : null}
                   </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <img
-                width={2000}
-                height={1122}
-                src={"/juniors/cyclist.jpg"}
-                alt="Single cyclist on road"
-                className="h-full w-full object-cover"
-              />
-              <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
-                <div className="w-3/4 text-center md:w-2/4">
-                  <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
-                    Want to become a triathlete?
-                  </h1>
-                  <p className="rounded-xl border-t-2 border-brandGreen py-3">
-                    Whether your child is new to triathlon or looking to improve
-                    their race performance, NWTC offers a fantastic opportunity
-                    to train, learn, and grow in a supportive team setting.
-                  </p>
-                  <p>Join us</p>
-                  <div className="flex flex-wrap justify-around">
-                    <BrandLink
-                      to="https://www.facebook.com/north.westtriathlon/"
-                      target="_blank"
-                    >
-                      <img
-                        aria-hidden
-                        src="/social-media/Facebook_Logo_Primary.png"
-                        alt="Facebook"
-                        width={2084}
-                        height={2084}
-                        className="h-6 w-6"
-                      />
-                      Facebook <ArrowTopRightOnSquareIcon className="h-6 w-6" />
-                    </BrandLink>
-                    <BrandLink
-                      to="https://www.instagram.com/northwest.triathlonclub/"
-                      target="_blank"
-                    >
-                      <img
-                        aria-hidden
-                        src="/social-media/Instagram_Glyph_Gradient.png"
-                        alt="Instagram"
-                        width={500}
-                        height={500}
-                        className="h-6 w-6"
-                      />
-                      Instagram{" "}
-                      <ArrowTopRightOnSquareIcon className="h-6 w-6" />
-                    </BrandLink>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
             <div id="safeguarding">
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
                 <div className="w-3/4 text-center md:w-2/4">
                   <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
-                    Safeguarding
+                    {safeguardingPage.title}
                   </h1>
                   <p className="rounded-xl border-t-2 border-brandGreen py-3">
-                    At NWTC, we are committed to creating a safe and positive
-                    environment for all members, especially children and young
-                    people. Every athlete has the right to enjoy sport free from
-                    harm, abuse or neglect.
+                    {safeguardingPage.paragraphs[0]}
                   </p>
-                  <p>
-                    If you are concerned about the welfare or protection of a
-                    child, or if you are a young person who needs to talk to
-                    someone, please rech out. We all have a role to play in
-                    keeping our community safe.
-                  </p>
+                  <p>{safeguardingPage.paragraphs[1]}</p>
                   <div className="flex flex-wrap justify-around pt-3">
                     <BrandLink
-                      to="/Safeguarding-Poster-NI-2025.pdf"
+                      to={social.safeguardingPdf}
                       target="_blank"
                       external
                     >
-                      <ArrowDownTrayIcon className="h-6 w-6" /> View our
-                      Safeguarding Poster 2025
+                      <ArrowDownTrayIcon className="h-6 w-6" />{" "}
+                      {safeguardingPage.posterLabel}
                     </BrandLink>
                   </div>
                 </div>

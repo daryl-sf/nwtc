@@ -1,5 +1,6 @@
 import type { FC, ReactNode, AnchorHTMLAttributes } from "react";
 import { Link, type LinkProps } from "react-router-dom";
+import { social } from "../content/links";
 
 interface BrandLinkProps extends LinkProps {
   children: ReactNode;
@@ -35,3 +36,41 @@ export const BrandLink: FC<
     </Link>
   );
 };
+
+function SocialIcon({ src, alt }: { src: string; alt: string }) {
+  return (
+    <img aria-hidden src={src} alt={alt} className="h-5 w-5 shrink-0 object-contain" />
+  );
+}
+
+export function FacebookLink({
+  children = "Facebook",
+}: {
+  children?: ReactNode;
+}) {
+  return (
+    <BrandLink to={social.facebook} target="_blank">
+      <SocialIcon src="/social-media/Facebook_Logo_Primary.png" alt="Facebook" />
+      {children}
+    </BrandLink>
+  );
+}
+
+export function InstagramLink({
+  children = "Instagram",
+}: {
+  children?: ReactNode;
+}) {
+  return (
+    <BrandLink
+      to={social.instagram}
+      target="_blank"
+    >
+      <SocialIcon
+        src="/social-media/Instagram_Glyph_Gradient.png"
+        alt="Instagram"
+      />
+      {children}
+    </BrandLink>
+  );
+}
