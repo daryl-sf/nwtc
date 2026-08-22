@@ -1,5 +1,7 @@
+import { useState } from "react";
 import ReactMarkdown from "react-markdown";
-import SwipeableCarousel from "../components/SwipableCarousel";
+import clsx from "clsx";
+import SectionHeading from "../components/SectionHeading";
 
 type Entry = {
   sk: string;
@@ -114,53 +116,75 @@ const entries: Entry[] = [
 ];
 
 export default function HallOfFamePage() {
+  const [selected, setSelected] = useState(entries[0]);
+
   return (
-    <main className="no-scrollbar h-dvh snap-y snap-mandatory overflow-y-scroll">
-      <div className="snap-start snap-always" id="hall-of-fame">
-        <div className="relative flex max-h-dvh min-h-dvh bg-brandBlue pb-20">
-          <div className="container mx-auto max-w-screen-xl text-xl md:pt-4">
-            <SwipeableCarousel
-              className="h-dvh md:h-[calc(100dvh-2rem)] md:rounded-xl"
-              id="hall-of-fame"
-            >
-              {entries.map((entry) => {
-                return (
-                  <div key={entry.sk}>
-                    {entry.image ? (
-                      <img
-                        src={entry.image.src}
-                        width={entry.image.width}
-                        height={entry.image.height}
-                        alt={`${entry.name} hall of famer`}
-                        className="h-full w-full object-cover"
-                      />
-                    ) : null}
-                    <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/70">
-                      <div className="w-3/4 text-center md:w-2/4">
-                        <div className="mb-4 flex items-center justify-center">
-                          <img
-                            src={entry.profileImage.src}
-                            width={entry.profileImage.width}
-                            height={entry.profileImage.height}
-                            alt={`${entry.name} hall of famer`}
-                            className="h-36 w-36 rounded-full border-2 border-brandGreen object-cover"
-                          />
-                        </div>
-                        <h1 className="mb-4 rounded-xl border-b-2 border-white pb-3 text-3xl md:text-4xl lg:text-5xl">
-                          {entry.name}
-                        </h1>
-                        <div className="no-scrollbar relative max-h-[60dvh] overflow-scroll text-ellipsis rounded-xl border-t-2 border-brandGreen px-3 py-3 text-justify">
-                          <ReactMarkdown>{entry.description}</ReactMarkdown>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-            </SwipeableCarousel>
-          </div>
-        </div>
+    <div className="mx-auto max-w-screen-xl px-4 py-10 md:px-6 md:py-14">
+      <div className="mb-10 max-w-3xl">
+        <SectionHeading>Hall of Fame</SectionHeading>
+        <p className="text-lg text-white/80">
+          A celebration of members whose racing, coaching, and community work
+          have shaped NWTC. Select an athlete to read their story.
+        </p>
       </div>
-    </main>
+
+      <ul className="mb-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+        {entries.map((entry) => (
+          <li key={entry.sk}>
+            <button
+              type="button"
+              onClick={() => {
+                setSelected(entry);
+                document
+                  .getElementById("hof-bio")
+                  ?.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
+              className={clsx(
+                "w-full rounded-xl border p-3 text-center transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brandGreen",
+                selected.sk === entry.sk
+                  ? "border-brandGreen bg-white/10"
+                  : "border-white/15 hover:border-white/40",
+              )}
+            >
+              <img
+                src={entry.profileImage.src}
+                alt={entry.name}
+                className="mx-auto mb-3 h-24 w-24 rounded-full border-2 border-brandGreen object-cover md:h-28 md:w-28"
+              />
+              <span className="font-display text-sm uppercase tracking-wide">
+                {entry.name}
+              </span>
+            </button>
+          </li>
+        ))}
+      </ul>
+
+      <article
+        id="hof-bio"
+        className="grid scroll-mt-20 items-start gap-8 border-t-2 border-brandGreen pt-8 md:grid-cols-[minmax(0,16rem)_1fr] lg:grid-cols-[minmax(0,20rem)_1fr]"
+      >
+        <div className="mx-auto text-center md:mx-0">
+          {selected.image ? (
+            <img
+              src={selected.image.src}
+              alt={selected.image.alt}
+              className="mb-4 w-full rounded-xl object-cover"
+            />
+          ) : (
+            <img
+              src={selected.profileImage.src}
+              alt={selected.profileImage.alt}
+              className="mx-auto mb-4 h-48 w-48 rounded-full border-2 border-brandGreen object-cover"
+            />
+          )}
+          <h2 className="font-display text-3xl uppercase tracking-wide">
+            {selected.name}
+          </h2>
+        </div>
+        <div className="prose-headings:font-display max-w-3xl space-y-4 text-left leading-relaxed [&_p]:mb-4 [&_strong]:text-brandGreen">
+          <ReactMarkdown>{selected.description}</ReactMarkdown>
+        </div>
+      </article>
+    </div>
   );
 }

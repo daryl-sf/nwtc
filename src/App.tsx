@@ -1,38 +1,36 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import SiteLayout from "./components/layout/SiteLayout";
 import Home from "./pages/Home";
+import About from "./pages/About";
+import Training from "./pages/Training";
+import Races from "./pages/Races";
+import LiamBall from "./pages/LiamBall";
+import Buncrana from "./pages/Buncrana";
+import Juniors from "./pages/Juniors";
+import Join from "./pages/Join";
 import HallOfFame from "./pages/HallOfFame";
 import Safeguarding from "./pages/Safeguarding";
-// import { Authenticator } from "@aws-amplify/ui-react";
-// import LogIn from "./pages/LogIn";
-// import { geistMono, geistSans } from "./assets/fonts";
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Home />,
+    element: <SiteLayout />,
+    children: [
+      { path: "/", element: <Home /> },
+      { path: "/about", element: <About /> },
+      { path: "/training", element: <Training /> },
+      { path: "/races", element: <Races /> },
+      { path: "/races/liam-ball", element: <LiamBall /> },
+      { path: "/races/buncrana", element: <Buncrana /> },
+      { path: "/juniors", element: <Juniors /> },
+      { path: "/join", element: <Join /> },
+      { path: "/hall-of-fame", element: <HallOfFame /> },
+      { path: "/safeguarding", element: <Safeguarding /> },
+    ],
   },
-  {
-    path: "/hall-of-fame",
-    element: <HallOfFame />,
-  },
-  {
-    path: "/safeguarding",
-    element: <Safeguarding />,
-  },
-  // {
-  //   path: "/login",
-  //   element: <LogIn />,
-  // },
 ]);
 
 function App() {
-  return (
-    // <Authenticator.Provider>
-    <main className={`scroll-smooth bg-background antialiased`}>
-      <RouterProvider router={router} />
-    </main>
-    // </Authenticator.Provider>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

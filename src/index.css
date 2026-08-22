@@ -1,14 +1,13 @@
 @import "tailwindcss";
 
-
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Source Sans 3", system-ui, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color-scheme: dark;
+  color: #ededed;
+  background-color: #102f55;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,25 +20,30 @@
 }
 
 @theme {
+  --font-display: "Oswald", sans-serif;
+  --font-sans: "Source Sans 3", sans-serif;
   --color-brandGreen: #7ed957;
   --color-brandBlue: #102f55;
   --color-background: #102f55;
   --color-foreground: #ededed;
 }
 
-
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @layer utilities {
   .no-scrollbar {
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
   .no-scrollbar::-webkit-scrollbar {
-    display: none; /* Safari and Chrome */
+    display: none;
   }
 }

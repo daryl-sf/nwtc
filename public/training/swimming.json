@@ -1,0 +1,185 @@
+[
+    {
+      "title": "Mixed Speed Session",
+      "description": "A mixed-intensity session combining steady swimming, pace changes and short, high-intensity efforts.",
+      "difficulty": "hard",
+      "focus": "speed",
+      "totalDistance": 1600,
+      "poolLength": 25,
+      "steps": [
+        {
+          "distance": 200,
+          "description": "Warm up: 50m front crawl, 50m breast stroke, 50m front crawl, 50m back stroke."
+        },
+        {
+          "distance": 200,
+          "description": "Easy."
+        },
+        {
+          "distance": 200,
+          "description": "75m easy, followed by 25m fast. Repeat for 200m.",
+          "repeats": 2
+        },
+        {
+          "distance": 200,
+          "description": "Steady."
+        },
+        {
+          "distance": 200,
+          "description": "Steady."
+        },
+        {
+          "distance": 200,
+          "description": "Build every 50m, getting progressively faster.",
+          "rest": "15 secs between each 50m"
+        },
+        {
+          "description": "Rest",
+          "rest": "2 mins"
+        },
+        {
+          "distance": 400,
+          "description": "8 x 50m flat out.",
+          "rest": "1 min between each 50m",
+          "repeats": 8
+        }
+      ]
+    },
+    {
+      "title": "Pyramid",
+      "description": "A controlled endurance session using a pyramid structure. Keep the same steady pace throughout all of the main efforts.",
+      "difficulty": "moderate",
+      "focus": "pace",
+      "totalDistance": 2200,
+      "poolLength": 25,
+      "steps": [
+        {
+          "distance": 200,
+          "description": "Warm up: 50m front crawl, 50m breast stroke, 50m front crawl, 50m back stroke."
+        },
+        {
+          "distance": 100,
+          "description": "Steady pace."
+        },
+        {
+          "distance": 200,
+          "description": "Steady pace."
+        },
+        {
+          "distance": 400,
+          "description": "Steady pace."
+        },
+        {
+          "distance": 600,
+          "description": "Steady pace."
+        },
+        {
+          "distance": 400,
+          "description": "Steady pace."
+        },
+        {
+          "distance": 200,
+          "description": "Steady pace."
+        },
+        {
+          "distance": 100,
+          "description": "Steady pace. Aim to maintain the same pace as the first 100m."
+        }
+      ]
+    },
+    {
+      "title": "Interval Speed Session",
+      "description": "A mixed-intensity session designed to work on speed, recovery and the ability to hold a strong pace over repeated efforts.",
+      "difficulty": "hard",
+      "focus": "speed",
+      "totalDistance": 1600,
+      "poolLength": 25,
+      "steps": [
+        {
+          "distance": 200,
+          "description": "Warm up: 50m front crawl, 50m breast stroke, 50m front crawl, 50m back stroke."
+        },
+        {
+          "distance": 200,
+          "description": "Easy front crawl."
+        },
+        {
+          "distance": 400,
+          "description": "8 x 50m. Swim the first 25m steady and the second 25m fast.",
+          "rest": "15 secs between each 50m",
+          "repeats": 8
+        },
+        {
+          "distance": 200,
+          "description": "Easy recovery swim."
+        },
+        {
+          "distance": 400,
+          "description": "8 x 50m at a strong, controlled pace. Aim to keep every 50m at the same pace.",
+          "rest": "20 secs between each 50m",
+          "repeats": 8
+        },
+        {
+          "distance": 200,
+          "description": "Easy recovery swim."
+        },
+        {
+          "distance": 300,
+          "description": "6 x 50m fast. Aim for a consistent pace across all six repetitions.",
+          "rest": "30 secs between each 50m",
+          "repeats": 6
+        },
+        {
+          "distance": 100,
+          "description": "Very easy cool down."
+        }
+      ]
+    },
+    {
+      "title": "Endurance Builder",
+      "description": "A steady aerobic session focused on building swim endurance and maintaining an even pace over longer distances.",
+      "difficulty": "moderate",
+      "focus": "endurance",
+      "totalDistance": 2900,
+      "poolLength": 25,
+      "steps": [
+        {
+          "distance": 200,
+          "description": "Warm up: 50m front crawl, 50m breast stroke, 50m front crawl, 50m back stroke."
+        },
+        {
+          "distance": 300,
+          "description": "Easy, relaxed front crawl."
+        },
+        {
+          "distance": 600,
+          "description": "3 x 200m at a steady aerobic pace. Try to make each 200m slightly faster than the previous one without sprinting the final effort.",
+          "rest": "20 secs between each 200m",
+          "repeats": 3
+        },
+        {
+          "distance": 200,
+          "description": "Easy recovery swim."
+        },
+        {
+          "distance": 800,
+          "description": "4 x 200m at a consistent race-style effort. Focus on smooth technique and holding the same pace throughout.",
+          "rest": "20 secs between each 200m",
+          "repeats": 4
+        },
+        {
+          "distance": 100,
+          "description": "Easy recovery swim."
+        },
+        {
+          "distance": 400,
+          "description": "Continuous 400m. Start comfortably and gradually increase the effort over the final 100m."
+        },
+        {
+          "distance": 100,
+          "description": "Very easy cool down."
+        }
+      ]
+    }
+  ]
+  
