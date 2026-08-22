@@ -7,6 +7,8 @@ import SwipeableCarousel from "./SwipableCarousel";
 import { BrandLink } from "./link";
 import { trainingSlides } from "../content/training";
 import { social } from "../content/links";
+import { swimSessionsPage } from "../content/swim";
+import { TextCta } from "./desktop/Editorial";
 
 function SocialRow() {
   return (
@@ -90,6 +92,11 @@ export default function Training() {
                         </li>
                       ))}
                     </ul>
+                    {slide.id === "pool" ? (
+                      <TextCta to="/training/swim-sessions">
+                        {swimSessionsPage.ctaFromTraining}
+                      </TextCta>
+                    ) : null}
                     {slide.social ? <SocialRow /> : null}
                   </div>
                 </div>

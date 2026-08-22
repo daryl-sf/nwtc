@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
 import SwipeableCarousel from "./SwipableCarousel";
 import { aboutSlides } from "../content/about";
+import { TextCta } from "./desktop/Editorial";
 
 export default function AboutUs() {
   return (
@@ -58,12 +58,11 @@ export default function AboutUs() {
                       </>
                     )}
                     {"cta" in slide && slide.cta ? (
-                      <Link
+                      <TextCta
                         to={slide.cta.to}
-                        className="hover:bg-brandGreen/80 mt-4 inline-block rounded-lg bg-brandGreen px-4 py-2 text-white"
                       >
                         {slide.cta.label}
-                      </Link>
+                      </TextCta>
                     ) : null}
                   </div>
                 </div>

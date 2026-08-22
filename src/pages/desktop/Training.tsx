@@ -1,8 +1,9 @@
 import { MapPinIcon } from "@heroicons/react/24/solid";
 import { ClockIcon } from "@heroicons/react/24/outline";
 import { trainingPage, trainingSlides } from "../../content/training";
-import { PageHero, PhotoEditorial } from "../../components/desktop/Editorial";
+import { PageHero, PhotoEditorial, TextCta } from "../../components/desktop/Editorial";
 import { FacebookLink, InstagramLink } from "../../components/link";
+import { swimSessionsPage } from "../../content/swim";
 
 export default function TrainingPage() {
   const [hero, ...rest] = trainingSlides;
@@ -39,6 +40,11 @@ export default function TrainingPage() {
               </li>
             ))}
           </ul>
+          {slide.id === "pool" ? (
+            <TextCta to="/training/swim-sessions">
+              {swimSessionsPage.ctaFromTraining}
+            </TextCta>
+          ) : null}
           {slide.social ? (
             <div className="mt-4 flex gap-6">
               <FacebookLink />

@@ -19,7 +19,7 @@ export const trainingSlides = [
     ],
     sessions: [
       { venue: "Foyle Arena, Derry", time: "Tuesdays 8:30pm" },
-      { venue: "Templemore Complex, Derry", time: "Thursdays 6pm" },
+      { venue: "Templemore SC, Derry", time: "Thursdays 6pm" },
     ],
     social: false,
   },
@@ -33,10 +33,10 @@ export const trainingSlides = [
       height: 799,
     },
     paragraphs: [
-      "Our weekly running sessions are designed to help you build speed, strength, and stamina. Training plans are designed with the race calendar in mind, with a focus on improving performance and reducing injury risk.",
+      "Our weekly running sessions are designed to help you build speed, strength, and stamina. Training plans are designed with the race calendar in mind, with a focus on improving performance and reducing injury risk. Get up to date details in our club WhatsApp",
     ],
     sessions: [
-      { venue: "Templemore Complex, Derry", time: "Wednesday 6:15pm" },
+      { venue: "Templemore SC, Derry", time: "Wednesday 6:15pm" },
     ],
     social: false,
   },

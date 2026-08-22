@@ -11,6 +11,7 @@ import BuncranaPage from "./pages/desktop/Buncrana";
 import JoinPage from "./pages/desktop/Join";
 import JuniorsPage from "./pages/desktop/Juniors";
 import ContactPage from "./pages/desktop/Contact";
+import SwimSessionsPage from "./pages/SwimSessions";
 import DesktopLayout from "./components/layout/DesktopLayout";
 import DesktopOnly from "./components/layout/DesktopOnly";
 
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: "/training",
     element: desktopPage("/#training", <TrainingPage />),
+  },
+  {
+    path: "/training/swim-sessions",
+    element: <SwimSessionsPage />,
   },
   {
     path: "/races",
