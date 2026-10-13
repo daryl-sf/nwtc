@@ -109,7 +109,7 @@ export default function Join() {
                           external
                         >
                           <ArrowDownTrayIcon className="h-6 w-6" />
-                          Safeguarding Poster 2025
+                          Safeguarding Poster 2026
                         </BrandLink>
                       </div>
                     ) : null}

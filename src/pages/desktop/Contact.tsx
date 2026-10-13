@@ -41,7 +41,7 @@ export default function ContactPage() {
           <li>
             <BrandLink to={social.safeguardingPdf} target="_blank" external>
               <ArrowDownTrayIcon className="h-5 w-5" />
-              Safeguarding Poster 2025
+              Safeguarding Poster 2026
             </BrandLink>
           </li>
         </ul>
